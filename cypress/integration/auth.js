@@ -27,8 +27,8 @@ describe('HOOQ - Bahasa Indonesia', () => {
         })
         
         it('Login with Valid Credentials', () => {
-			signupPage.verifySignupPage()
-			signupPage.loginWithValidCredentials()
+			loginPage.verifyLoginPage()
+			loginPage.loginWithValidCredentials()
         })
         
         it('Login with Invalid Credentials', () => {
