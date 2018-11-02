@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 10
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
+before_script:
+  - npm install cypress
+  - npm install chance
+
+script:
+  - cypress run
