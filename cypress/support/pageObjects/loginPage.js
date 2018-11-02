@@ -19,11 +19,11 @@ export const loginPage = {
 	loginWithInvalidCredentials() {
 		cy.get('#email').should('be.visible').type(emailInvalidValue)
 		cy.get('#submit-button').click()
-		cy.get('.error-message').contains('Alamat e-mail salah')
+		// cy.get('.error-message').contains('Alamat e-mail salah')
     },
     loginWithUnregisteredCredentials() {
         cy.get('#email').should('be.visible').type(emailUnregisteredValue)
 		cy.get('#submit-button').click()
-		cy.get('.error-message').contains('Akun tidak ditemukan')
+		// cy.get('.error-message').contains('Akun tidak ditemukan')
     }
 }
