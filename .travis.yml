@@ -12,4 +12,4 @@ before_script:
   - npm install chance
 
 script:
-  - cypress run
+  - cypress run --browser chrome
