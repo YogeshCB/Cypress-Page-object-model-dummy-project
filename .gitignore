@@ -1,0 +1,16 @@
+# Created by https://www.gitignore.io/
+
+### Cypress.io v.3.1.0 ###
+cypress/fixtures/example.json
+cypress/integration/examples/*
+cypress/videos/*
+cypress/screenshots/*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# End of https://www.gitignore.io/
