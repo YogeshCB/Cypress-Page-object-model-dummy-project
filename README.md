@@ -12,7 +12,7 @@ steps:
       path: cypress/videos
   - store_artifacts:
       path: cypress/screenshots
-Test summary
+```Test summary```
 Generate just XML report
 CircleCI can store test results from a large number of test reporters. Cypress can output test results with custom reporters, including using built-in junit format. Just add the following options to the CI command to generate and store test results.
 
@@ -21,6 +21,7 @@ CircleCI can store test results from a large number of test reporters. Cypress c
     command: cypress run --reporter junit --reporter-options "mochaFile=results/my-test-output.xml"
 - store_test_results:
     path: results
+    
 The generated file will be placed in folder results and the folder will be uploaded to CircleCI storage. This summary will be really helpful when a test fails. For example, I have introduced a different label into the test, the word testing never appears on the page, yet the test is looking for it.
 
 // a-spec.js
@@ -30,7 +31,7 @@ it('has h2', () => {
 
 The CircleCI test summary shows failed test and user-friendly message.
 
-Failed test message
+```Failed test message```
 
 Switching to the artifacts tab, we can find the screenshot PNG image taken at the failure moment.
 
@@ -44,7 +45,7 @@ The failure is now easy to see and fix.
 
 In this repository take a look at test-junit script inside package.json
 
-Spec + XML reports
+```Spec + XML reports```
 You can generate XML junit report and see spec output while CI is running using mocha-multi-reporters.
 
 npm install --save-dev mocha mocha-multi-reporters mocha-junit-reporter
