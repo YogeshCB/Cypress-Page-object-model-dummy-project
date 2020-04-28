@@ -1,7 +1,7 @@
 # Cypress-Page-object-model-dummy-project
 A testing framework - To test the UI component 
 
-```You can save generated videos and screenshots as CircleCI artifacts``
+```You can save generated videos and screenshots as CircleCI artifacts```
 
 steps:
   - checkout
