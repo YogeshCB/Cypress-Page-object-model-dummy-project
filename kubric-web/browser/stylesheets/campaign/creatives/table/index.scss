@@ -1,0 +1,368 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+$completed: #104b31;
+$completed_bg: #d3f1e4;
+$pending: #040404;
+$pending_bg: #eeeded;
+$progress: #0e2150;
+$progress_bg: #d0e7ff;
+$failed: #ee8577;
+$failed_bg: #fde4d4;
+
+.audTitle {
+  font-size: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ads {
+  width: 100%;
+  height: 100%;
+  padding: 2rem $content-padding;
+}
+
+.check {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.failed {
+  color: $failed;
+  font-weight: 500;
+}
+
+.pending {
+  color: $progress;
+  font-weight: 500;
+}
+
+.progress {
+  color: $progress;
+  font-weight: 500;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+
+  .statusText {
+    animation: blink 1s linear infinite;
+  }
+}
+
+.total {
+  text-align: right;
+}
+
+.dateCell {
+  width: 21rem;
+  @media #{$xlarge-up} {
+    width: 25rem !important;
+  }
+}
+
+.button {
+  float: right;
+  z-index: 7;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.filterContainer {
+  height: 4rem !important;
+  line-height: 4rem !important;
+  border-radius: .6rem;
+}
+
+.errorTag {
+  background: #fff;
+  margin-left: 1rem;
+  color: #000;
+  border-radius: 2.2rem;
+  padding: .5rem .8rem;
+  border: .1rem solid #ddd;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background: #f2f2f2;
+  }
+
+  .errorNumber {
+    color: #fff;
+    border-radius: 1.4rem;
+    width: 2.8rem;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+    background-color: $failed;
+    padding: .1rem .8rem;
+  }
+}
+
+.uploadSection {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  right: 2rem;
+  top: 0.94rem;
+}
+
+.mqcfailure {
+  font-size: 2.5rem;
+  color: $failed;
+}
+
+.mqcsuccess {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.audTitleCell {
+  width: 13rem !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .uploadingImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 8rem !important;
+    width: 11rem !important;
+    object-fit: contain !important;
+    border-radius: 2px;
+    border: solid 1px #efedfa;
+    background-color: #fafafa;
+  }
+
+  &.defaultImage {
+    .titleIcon {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-size: 4.5rem !important;
+      color: #e6e6e6;
+      width: 4.5rem !important;
+      background-color: transparent !important;
+      margin: auto;
+    }
+
+    .chatCount {
+      right: 2.5rem;
+      top: 0.8rem;
+    }
+  }
+
+  .audTitle {
+    width: 18rem;
+  }
+
+  .chatCount {
+    $size: 2rem;
+    background: #ee3783;
+    height: $size;
+    border-radius: $size/2;
+    color: white;
+    position: absolute;
+    min-width: $size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    top: -1rem;
+    right: -1rem;
+
+    .dot {
+      $dot-size: .4rem;
+      height: $dot-size;
+      width: $dot-size;
+      border-radius: $dot-size/2;
+      background: white;
+      display: inline-block;
+    }
+  }
+
+  .titleIcon {
+    background-color: #e6e6e6;
+    background-size: cover;
+    background-position: center;
+    height: 8rem !important;
+    width: 11rem !important;
+    object-fit: contain !important;
+    border-radius: 2px;
+    border: solid 1px transparent;
+  }
+}
+
+.audSequence {
+  max-width: 5rem;
+  @media #{$xlarge-up} {
+    max-width: 6rem !important;
+  }
+  justify-content: center;
+}
+
+.audId {
+  display: block !important;
+  padding-left: 3rem !important;
+}
+
+.manualQc {
+  text-align: center !important;
+  justify-content: center;
+}
+
+.audIdTitle {
+  padding-left: 0 !important;
+}
+
+.titleCell {
+  width: 50rem !important;
+}
+
+.container {
+  padding: 0 !important;
+  margin-top: -1rem;
+}
+
+.impCell {
+  width: 100%;
+  text-align: center;
+}
+
+.impHeader {
+  justify-content: center;
+}
+
+.descCell {
+  width: 15% !important;
+}
+
+.statusCell {
+  display: flex !important;
+  width: 26rem !important;
+  @media #{$xlarge-up} {
+    width: 50rem !important;
+  }
+
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.updatedCell {
+  display: none !important;
+  @media #{$xlarge-up} {
+    display: inherit !important;
+  }
+}
+
+.statusContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+
+  .divider {
+    width: 1px;
+    height: 8px;
+    border-radius: 1px;
+    background-color: #eeeded;
+    margin: 0 0.6rem;
+  }
+}
+
+.statusHeader {
+  justify-content: left !important;
+}
+
+.statusBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-style: normal;
+  min-width: 10rem;
+  text-align: center;
+  height: 2.4rem;
+  padding: 4px 12px;
+  border-radius: 45px;
+  font-size: 1.2rem;
+
+  .retry {
+    color: $black_11;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  &.created {
+    color: $progress;
+    background: $progress_bg;
+  }
+
+  &.pending {
+    color: $pending;
+    background: $pending_bg;
+
+    .statusText {
+      animation: blink 1s linear infinite;
+    }
+  }
+
+  &.erred {
+    color: $failed;
+    background: $failed_bg
+  }
+
+  &.completed {
+    color: $completed;
+    background: $completed_bg
+  }
+
+  &.inprogress {
+    color: $progress;
+    background: $progress_bg;
+
+    .statusText {
+      animation: blink 1s linear infinite;
+    }
+  }
+}
+
+.spinnerOverlay {
+  right: 23rem;
+}
+
+.selectedFilters {
+  padding-right: 1rem;
+
+  .tag {
+    background: transparent;
+  }
+}
+
+.noCreatives {
+  padding-left: 2rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

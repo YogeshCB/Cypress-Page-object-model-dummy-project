@@ -1,0 +1,26 @@
+.modalContent {
+  max-width: 50%;
+}
+
+.container {
+  font-weight: normal;
+  position: relative;
+}
+.link {
+  width: 120px;
+}
+.button {
+  margin: 0 1.5rem;
+  width: 120px;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.actions {
+  padding-top: 1rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}

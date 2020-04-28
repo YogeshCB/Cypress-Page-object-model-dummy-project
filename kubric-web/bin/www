@@ -1,0 +1,127 @@
+import newrelic from "newrelic";  //Should be the first line. Do not move.
+
+const envt = process.env.NODE_ENV || 'development';
+
+import http from 'http';
+import https from 'https';
+import express from 'express';
+import fs from 'fs';
+import appFactory from '../app';
+import config from 'config';
+import sslRootCas from 'ssl-root-cas/latest';
+import Workflow from '../server/lib/job';
+import messages from '../server/lib/messages';
+import logger from '../server/lib/logger';
+import { serviceManager } from '../server/services';
+import { initialize as initializeEvents } from "../server/events";
+import appCache from '../server/lib/cache';
+import mkdirp from 'mkdirp';
+import rimraf from 'rimraf';
+import featureGates from "../server/lib/featuregates";
+
+const SSWORKSPACE = config.get('paths.spreadsheets');
+
+const expressApp = express();
+const appName = config.get('app');
+
+// Setting port
+let port = process.env.NODE_PORT || '80';
+const securePort = process.env.NODE_SECURE_PORT || '443';
+
+const errorHandler = error => {
+  logger.error(error);
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  const message = messages.getResponseMessage(`server.${error.code}`, {
+    port,
+  });
+
+  Workflow.shutdown(appName);
+
+  if (message) {
+    logger.error(message);
+    process.exit(1);
+  } else {
+    throw error;
+  }
+};
+
+const listenHandler = (serverName, lport) => {
+  lport = lport || port;
+  logger.info(`${serverName} listening on ${lport}`);
+};
+
+const initialize = () => {
+  console.log("Initializing service manager");
+  return serviceManager.init()
+    .then(::featureGates.initialize)
+    .then(() =>
+      new Promise((resolve, reject) => {
+        rimraf(SSWORKSPACE, {
+          glob: false
+        }, err => {
+          if (err) {
+            reject(err);
+          } else {
+            try {
+              mkdirp.sync(SSWORKSPACE);
+              resolve();
+            } catch (ex) {
+              reject(ex);
+            }
+          }
+        });
+      }));
+};
+
+if (envt === 'production') {
+  const certFiles = config.get('certificates');
+  const rootCas = sslRootCas.create();
+
+  if (certFiles.caChain) {
+    for (let i = 0; i < certFiles.caChain.length; i++) {
+      rootCas.addFile(certFiles.caChain[i]);
+    }
+  }
+  https.globalAgent.options.ca = rootCas;
+
+  const credentials = {
+    key: fs.readFileSync(certFiles.key),
+    cert: fs.readFileSync(certFiles.cert),
+  };
+
+  // Starting https server
+  const httpsServer = https.createServer(credentials, expressApp);
+  const socket = initializeEvents(httpsServer, appCache);
+  appFactory(expressApp, socket, appCache);
+  expressApp.set('port', securePort);
+  httpsServer.on('error', errorHandler);
+  httpsServer.on('listening', listenHandler.bind(null, 'secure-backend', securePort));
+  initialize()
+    .then(() => {
+      console.log("Service manager initialized");
+      httpsServer.listen(securePort)
+    });
+}
+
+if (envt === 'development' || envt === 'release') {
+  //Starting http server
+  const server = http.createServer(expressApp);
+  const socket = initializeEvents(server, appCache);
+  appFactory(expressApp, socket, appCache);
+  expressApp.set('port', port);
+  server.on('error', errorHandler);
+  server.on('listening', listenHandler.bind(null, 'backend'));
+  initialize()
+    .then(() => {
+      console.log("Service manager initialized");
+      server.listen(port)
+    });
+}
+
+process.once('SIGINT', () => {
+  Workflow.shutdown(appName);
+});
+

@@ -1,0 +1,142 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "../../defines";
+
+.input {
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  font-size: 1.4rem;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: .35s;
+  transition-property: border;
+}
+
+.icon {
+  position: absolute;
+  font-size: 2rem;
+  line-height: 2rem;
+  top: 1.4rem;
+  left: 2.3rem;
+  color: gray;
+}
+
+.inputField {
+  font-size: 1.4rem;
+  width: 100%;
+
+  &.disabled {
+    .input {
+      color: $border-color;
+    }
+  }
+
+  .posWrapper {
+    position: sticky;
+  }
+
+  textarea {
+    height: 100%;
+  }
+
+  .error {
+    font-size: 1.1rem;
+    color: $input-error;
+    visibility: hidden;
+    position: absolute;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .35s;
+    transition-property: color;
+    padding-top: .2rem;
+  }
+
+  &.error {
+    .error {
+      visibility: visible;
+    }
+
+    .label {
+      color: $input-error;
+    }
+  }
+
+  &.material {
+    padding: 1.5rem 0;
+
+    .hint {
+      position: absolute;
+      top: 1rem;
+      color: $input-label;
+      font-weight: $field-label-weight;
+      font-size: $field-label-size;
+      line-height: normal;
+
+      &.label {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: .35s;
+        transition-property: top, color, font-size;
+      }
+    }
+
+    &.error {
+      .input {
+        border-bottom: 2px solid $input-error;
+      }
+    }
+
+    .input {
+      $label-top: -1rem;
+      height: $field-height;
+      border: 0;
+      border-bottom: 1px solid $border-color;
+      position: relative;
+      background: transparent;
+      border-top: .8rem solid transparent;
+
+      &.hasValue {
+        & + .label {
+          top: $label-top;
+          font-size: 1.2rem;
+        }
+      }
+
+      &:focus {
+        border-bottom: 2px solid $primary-color;
+
+        & + .label {
+          top: $label-top;
+          font-size: $field-label-focus;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &.simple {
+    &.error {
+      .input {
+        border-color: $input-error;
+      }
+    }
+
+    .input {
+      padding: .5rem;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+.inputWithIcon {
+  padding-left: 5rem !important;
+  border: 1px solid #d5d6d9 !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  height: 5rem !important;
+}

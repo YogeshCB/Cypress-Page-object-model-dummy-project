@@ -1,0 +1,166 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import './defines';
+@import "../defines";
+
+$help-height: 4.5rem;
+$active: #f8f6fe;
+
+.container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $panel-width;
+  position: fixed;
+  border-right: 1px solid $shadow-color;
+  background: white;
+  z-index: 1000000;
+}
+
+.selector {
+  position: absolute;
+  top: 0;
+  bottom: 4rem;
+  width: 100%;
+  padding: 0 !important;
+  background: white !important;
+  color: black;
+  font-size: 1.4rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.subOption {
+  .option {
+    justify-content: left;
+    margin-bottom: 0;
+    &:hover {
+      background: $primary-color08;
+    }
+
+    &.selected, &:active {
+      background-color: $active;
+      color: $primary-color !important;
+    }
+  }
+}
+
+.option {
+  padding-left: 2.4rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  &:hover, &:active {
+    background: white;
+  }
+
+}
+
+.notificationIcon {
+  width: 57px;
+  height: 63px;
+}
+
+.header {
+  font-size: 1.4rem !important;
+  height: 5rem !important;
+  line-height: 5rem !important;
+  border-bottom:  0 !important;
+  padding: 0 2rem !important;
+}
+.message {
+  border: 0 !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 0 !important;
+  margin-bottom: 10px !important;
+  border-bottom: 0 !important;
+}
+
+.messages {
+  width: 100% !important;
+}
+
+.emptyPage {
+  padding: 0 !important;
+}
+
+.navIcon {
+  font-size: 2.1rem;
+  margin-right: .5rem;
+  color: $primary-color !important;
+
+  &.hasNotifications {
+    color: $kubric-pink !important;
+  }
+}
+
+.needHelp {
+  height: $help-height;
+  cursor: pointer;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background: white;
+  justify-content: center;
+  width: 100%;
+  color: black;
+
+  &:hover, &:active {
+    color: $primary-color;
+  }
+
+  &.hasNotifications {
+    color: $kubric-pink !important;
+  }
+}
+
+.appIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: middle;
+  // margin-right: 1.4rem;
+}
+
+.label {
+  .super {
+    position: relative;
+    $size: 1.5rem;
+    background: $red_de;
+    color: white;
+    border-radius: $size;
+    height: $size;
+    width: $size;
+    font-size: 1rem;
+    padding: .3rem;
+    text-align: center;
+    display: inline-block;
+    line-height: $size;
+    font-weight: 500;
+    top: -1rem;
+  }
+}
+
+.logoContainer {
+  right: 0;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+  .iconLogo {
+    cursor: pointer;
+    height: 3rem;
+    width: 8.2rem;
+    background-position: left;
+    background-size: contain;
+    display: inline-block;
+    background-image: url('../../icons/logo.svg');
+    background-repeat: no-repeat;
+  }
+}

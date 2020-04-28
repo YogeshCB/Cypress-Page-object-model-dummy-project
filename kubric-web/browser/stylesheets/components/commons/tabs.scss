@@ -1,0 +1,60 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "../../defines";
+
+.tabs {
+  background: transparent;
+  height: 100%;
+  position: relative;
+}
+
+.tabHeaders {
+  background: white;
+  border-bottom: 1px solid $border-color;
+}
+
+.tabHeader {
+  display: inline-block;
+  padding: 0 3rem;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+  transition-duration: .1s;
+  transition-property: border;
+  line-height: $tab-header-height;
+  position: relative;
+
+  .headspinner {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    right: .5rem;
+    top: 1.2rem;
+  }
+
+  &.selected {
+    border-bottom-color: $primary-color;
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+.tabContent {
+  position: absolute;
+  top: $tab-header-height + .4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 10rem;
+  box-sizing: content-box;
+}
+
+.spinner {
+  width: 4rem;
+  height: 4rem;
+}
+
+.tab {
+  height: 100%;
+  overflow: auto;
+}

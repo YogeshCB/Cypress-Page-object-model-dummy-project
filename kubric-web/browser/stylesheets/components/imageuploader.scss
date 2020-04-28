@@ -1,0 +1,44 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.hoverAppear {
+  &:hover {
+    .changeImage {
+      display: block;
+    }
+  }
+  .changeImage {
+    display: none;
+  }
+}
+
+.imageUploader {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid $black_16;
+  background: white;
+  padding: .3rem;
+  &:hover {
+    opacity: .8;
+  }
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+  .changeImage {
+    color: white !important;
+    border: 1px solid white;
+    display: none;
+  }
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

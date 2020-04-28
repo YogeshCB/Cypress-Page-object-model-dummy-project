@@ -1,0 +1,111 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+$primary-color: #1b1334;
+.taskprogress {
+  $retrysize: 2rem;
+  background-color: white;    
+  border-top: 1px solid #d5d6d9;
+  padding: 10px 14px;
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text {
+    width: 173px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .size{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 12px;
+  }
+  .download {
+    font-size: 14px;
+    color: #0070E0;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+  .title {
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    @include ellipsis();
+  }
+  .description {
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    @include ellipsis();
+  }
+  .error {
+    color: $error;
+  }
+  .progressValue {    
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.6);
+    position: relative;
+    width: 55%;
+    &.taskErred {
+      color: $error;
+    }
+  }
+  .count {
+    margin-left: 1rem;
+  }
+  .desc {
+    @include ellipsis();
+  }
+  .desc, .count {
+    font-size: 1.2rem;
+    color: $secondary-text;
+  }
+  .iconCheck {
+    color: $primary-color;
+    font-size: 1.4rem;
+    margin-left: auto;
+  }
+  .icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+  }
+  .progressbar {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    .bar {
+      width: 95%;
+      height: 8px;
+      margin-top: 4px;
+      border-radius: 8px;
+      background: #e9e3ff !important;
+    }
+    .taskErred {
+      background: $error;
+    }
+  }
+  .error {
+    font-size: 1.2rem;
+    position: absolute;
+    padding-top: .3rem;
+  }
+  .retry {
+    font-size: $retrysize;
+    width: $retrysize;
+    height: $retrysize;
+    line-height: $retrysize;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+      opacity: .7;
+      background: $gray_ea;
+    }
+  }
+}

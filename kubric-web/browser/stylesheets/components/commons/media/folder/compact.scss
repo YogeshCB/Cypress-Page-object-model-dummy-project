@@ -1,0 +1,83 @@
+@import "../../../../defines";
+
+$margin: 1rem;
+
+.selectedParent {
+  position: relative;
+  display: inline-block;
+  margin-bottom: $margin;
+}
+
+.selectedFolder {
+  background-color: #f8f6fe !important;
+  border: 2px solid $primary-color !important;
+}
+
+.nameFont {
+  font-size: 18px;
+}
+
+.nameSelected {
+  color: $primary-color !important;
+}
+
+.options {
+  justify-self: flex-end;
+  width: 1rem;
+  height: 1.5rem;
+  margin-left: auto;
+}
+
+.folder {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+  height: 48px;
+  width: 220px;
+  border: 2px solid transparent;
+  // transition: all linear 0.2s;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
+  &.inactive {
+    opacity: .5;
+  }
+  &:focus{
+    outline: 0;
+    box-shadow: 2px 2px 24px -9px rgba(86,17,214,1);
+  }
+}
+
+.folderIcon {
+  color: rgba(0, 0, 0, 0.8);
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  display: block;
+  font-weight: 300;
+}
+
+.name {
+  color: rgb(100, 111, 121);
+  width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recent{
+  border: solid 1px $kubric-pink;
+  color: $kubric-pink;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 10px;
+  margin-right: 12px;
+}

@@ -1,0 +1,72 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.container {
+  padding: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.icon {
+  width: 19.6rem;
+  height: 14.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.campaignIcon {
+  background-image: url("https://res.cloudinary.com/dsvdhggfk/image/upload/v1548667122/kubric/apps/campaign.svg");
+}
+
+.productvideosIcon {
+  background-image: url("https://res.cloudinary.com/dsvdhggfk/image/upload/v1548667123/kubric/apps/productvideos.svg");
+}
+
+.feedIcon {
+  width: 18.6rem;
+  background-image: url("https://res.cloudinary.com/dsvdhggfk/image/upload/v1548667123/kubric/apps/feedcards.svg");
+}
+
+.bannersIcon {
+  width: 25rem;
+  background-image: url("https://res.cloudinary.com/dsvdhggfk/image/upload/v1548667122/kubric/apps/banner.svg");
+}
+
+.studioIcon {
+  width: 25rem;
+  background-image: url("https://res.cloudinary.com/dsvdhggfk/image/upload/v1548667123/kubric/apps/studio.svg");
+}
+
+.app {
+  width: 24.6rem;
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  color: black;
+  padding: 1.6rem 2.5rem;
+  height: 27rem;
+  margin: 0 1.6rem 1.6rem 0;
+  float: left;
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 2.4rem;
+    padding-bottom: 1.6rem;
+    color: #29146b;
+  }
+
+  .description {
+    color: black;
+    font-size: 1.4rem;
+  }
+}
+

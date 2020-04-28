@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidGradleBuildConfiguration">
+    <option name="SYNC_PROJECT_BEFORE_BUILD" value="true" />
+    <option name="COMMAND_LINE_OPTIONS" value="--stacktrace" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fa296cd-b687-4fe8-82f1-1e4acb0cca42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../go-jek/untitled/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Api-Test-framework-design-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-automation/Reports/Screenshots/null.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/integration/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/plugins/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/support/commands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/support/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/support/pageObjects/loginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/support/pageObjects/mainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cypress/support/pageObjects/signupPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/Reports/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/Reports/Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/Test Cases/Test cases.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/Test-Input/Test-Input-Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/Test-Input/Test-Input-Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/exes/geckodriver-v10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/POM/ChoosingFlightPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/POM/ContinueBookingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/POM/SearchFlights.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/TestCases/CommonTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/TestCases/CommonTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/TestCases/DriverInitalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/TestCases/DriverInitalization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/TestExecutionSuite/BasicFunctionalExecutionSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/TestExecutionSuite/BasicFunctionalExecutionSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/commonMethods/CommMeths.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/commonMethods/CommMeths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/Go-Jek Assignment Execution Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/junitreports/TEST-TestExecutionSuite.BasicFunctionalExecutionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/junitreports/TEST-TestExecutionSuite.BasicFunctionalExecutionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/Go-Jek Assignment Execution Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/surefire-reports/testng.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/POM/ChoosingFlightPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/POM/ContinueBookingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/POM/SearchFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/POM/SearchFlights.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/TestCases/CommonTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/TestCases/CommonTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/TestCases/DriverInitalization.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/TestCases/DriverInitalization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/TestExecutionSuite/BasicFunctionalExecutionSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/TestExecutionSuite/BasicFunctionalExecutionSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/commonMethods/CommMeths.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/commonMethods/CommMeths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/target/test-classes/commonMethods/Logs.class" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/target/test-classes/commonMethods/Logs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Default suite/Default test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Default suite/Default test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Default suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Go-Jek Assignment Execution Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Suite/Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Suite/Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/junitreports/TEST-ClearTripPractice.Testt.HelloWorld.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/junitreports/TEST-TestCases.Setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/junitreports/TEST-TestExecutionSuite.BasicFunctionalExecutionSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/junitreports/TEST-com.TestCases.Setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/Default test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Default suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/Go-Jek Assignment Execution Suite Test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Go-Jek Assignment Execution Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/Test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/test-output/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/kubric-web" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="selenium-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium-framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-automation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="Test-Input" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fa296cd-b687-4fe8-82f1-1e4acb0cca42" name="Default Changelist" comment="" />
+      <created>1588111512203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588111512203</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="SOQL Query" />
+      <window_info anchor="bottom" id="Problems" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Log Analyzer" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Anonymous Apex" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20515268" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

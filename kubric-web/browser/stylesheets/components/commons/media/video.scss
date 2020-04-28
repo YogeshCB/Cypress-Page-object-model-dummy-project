@@ -1,0 +1,110 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .hoverDuration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.72);
+    padding: 0.5rem;
+    font-size: 12px;
+    color: #333;
+    border-top-left-radius: 8px;
+    min-width: 45px;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .videoCard {
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .video {
+    box-sizing: border-box;
+    width: 100%;
+    background: black;
+    height: 100%;
+  }
+
+  .iconVideoPlay, .iconVideoPause {
+    cursor: pointer;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .iconVideoPlay {
+    background-image: url('../../../../icons/play.svg');
+  }
+
+  .iconVideoPause {
+    background-image: url('../../../../icons/pause.svg');
+  }
+
+  .hoverVideoPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../../../icons/play.svg');
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .actions {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .overlay {
+    top: auto;
+    padding: 0 1rem;
+    height: 5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .35s;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  .seekbar {
+    width: 100%;
+  }
+
+  .timeString {
+    margin-left: .5rem;
+  }
+}

@@ -1,0 +1,17 @@
+node_modules
+dist
+npm-debug.log
+.idea
+config/
+!browser/js/config/
+package-lock.json
+.vscode
+yarn-error.log
+/components/
+browser/js/bitcomponents
+.bitmap
+temp
+storybook-static/
+/newrelic_agent.log
+serverconf/jophin.js
+.DS_Store

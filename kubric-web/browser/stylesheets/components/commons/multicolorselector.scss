@@ -1,0 +1,51 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import '../../icons/app';
+
+.selections {
+  @include clearfix();
+}
+
+.colorSelector {
+  position: relative;
+}
+
+.addColor {
+  background: $border-color;
+  color: $secondary-text;
+  margin: .5rem;
+  float: left;
+  @include centralize();
+  @include color-blip(1);
+  position: relative;
+  span {
+    font-size: 1.5rem;
+    display: inline-block;
+    height: 2rem;
+  }
+}
+
+.selectedColorOverlay {
+  @include overlay();
+  background-color: transparent;
+  display: none;
+  .iconClose {
+    @extend .iconWhiteClose;
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.selectedColor {
+  float: left;
+  margin: .5rem;
+  &:hover {
+    .selectedColorOverlay {
+      display: flex;
+    }
+  }
+}
+
+.colorSelector {
+  @include clearfix();
+}

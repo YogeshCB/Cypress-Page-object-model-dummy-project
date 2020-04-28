@@ -1,0 +1,71 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "../../defines";
+
+$logo-height: 3rem;
+$logo-width: 14.2rem;
+$active: #f8f6fe;
+
+.selector {
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: white;
+}
+
+.subOption {
+  .option {
+    font-weight: 300;
+    height: 3.5rem;
+    padding-top: 0;
+    font-size: 1.4rem !important;
+  }
+}
+
+.optionLabel {
+  @include ellipsis();
+}
+
+.option {
+  height: 2rem;
+  padding: 2rem 1rem 0 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  &:hover {
+    background: $bg-color;
+  }
+
+  &:active {
+    background-color: $active;
+    color: $primary-color;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background: $primary-color;
+  align-self: center;
+  margin-left: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.option:first-child {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: 500;
+  color: $primary-color;
+  padding-right: 1rem;
+}

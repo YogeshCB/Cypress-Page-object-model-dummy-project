@@ -1,0 +1,62 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import '../defines';
+
+$col-width: 49%;
+
+.attributes {
+  padding: 2rem 0;
+}
+
+.label, .hint {
+  font-size: 1.4rem !important;
+}
+
+.column {
+  width: $col-width !important;
+  padding: 0 1rem 0 0;
+}
+
+.header {
+  padding: 0 1rem 0 0 !important;
+  font-size: $field-label-size;
+  font-weight: $field-label-weight !important;
+  color: $input-label !important;
+  background: transparent !important;
+}
+
+.cell {
+  min-height: 0 !important;
+  padding: 0 .5rem !important;
+}
+
+.actionColumn {
+  width: 10% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  justify-content: center !important;
+}
+
+.grid {
+  width: 100%;
+}
+
+.close {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  color: $gray_89;
+  background: $gray_ea;
+  text-align: center;
+  border-radius: 5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+
+  &:hover {
+    background: $primary-color10;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transform: scale(1.2);
+  }
+}

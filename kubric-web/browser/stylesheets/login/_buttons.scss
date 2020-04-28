@@ -1,0 +1,52 @@
+.btn {
+  margin: 1.5rem 0;
+  padding: 1.5rem 1.9rem;
+  border: transparent;
+  border-radius: 1rem;
+  outline: none;
+  font-size: $font-size-text-t3;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-default {
+  border: 1px solid $brand-pink;
+  background-color: transparent;
+  color: $brand-pink;
+}
+
+.btn-pink {
+  background-color: $brand-pink;
+  border: 1px solid $brand-pink;
+  color: $white;
+  transition: .3s all ease;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.btn-no-border {
+  border: transparent;
+}
+
+.btn-sm {
+  border-radius: .3rem;
+  padding: 1.2rem 4rem;
+  font-size: $font-size-text-t4;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-brand {
+  border-radius: 2.3rem;
+  padding: 1rem 3rem;
+  font-size: $font-size-text-t4;
+  font-weight: 500;
+  color: $brand-pink;
+  background: #fff;
+  border: 0;
+  font-family: 'Work Sans', sans-serif;
+  box-shadow: 0px 10px 30px 0px rgba(12, 16, 21, 0.15);
+}

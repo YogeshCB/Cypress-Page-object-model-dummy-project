@@ -1,0 +1,76 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../../defines";
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: 1px solid $border-color;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  background-color: $bg-color;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  justify-content: space-between;
+  color: $secondary-text;
+  border: 1px solid $border-color;
+  border-radius: 2.8rem;
+  padding-left: 1rem;
+}
+
+.textcolor {
+  width: 7rem;
+}
+
+.bgcolor {
+  width: 12rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.decoration {
+  width: 2.8rem;
+  height: 2.8rem;
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: .5rem;
+  margin-right: .5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+
+  &:hover {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}
+
+.decorationSelected {
+  background: $primary-color;
+  color: white;
+
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.textarea {
+  @include input();
+  font-size: 1.4rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-width: 0;
+  resize: none;
+}

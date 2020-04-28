@@ -1,0 +1,145 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import '../../icons/fonticons';
+
+$info_text: $progress-text !default;
+
+.notifier {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.notification {
+  $border-radius: 4px;
+  border-radius: $border-radius;
+  background: white;
+  position: relative;
+  margin: 1rem 2rem;
+
+  .close {
+    $size: 2.5rem;
+    $pos: $size/2;
+    position: absolute;
+    right: -$pos;
+    top: 2rem;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    color: $secondary-text;
+    font-size: 1rem;
+    background: white;
+    height: $size;
+    width: $size;
+    text-align: center;
+    line-height: $size;
+    box-sizing: content-box;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    &.success {
+      border-color: $success_text;
+      color: $success_text;
+    }
+
+    &.error {
+      border-color: $error_text;
+      color: $error_text;
+    }
+
+    &.warning {
+      border-color: $warning_text;
+      color: $warning_text;
+    }
+
+    &.info {
+      border-color: $info_text;
+      color: $info_text;
+    }
+  }
+
+  .details {
+    display: flex;
+    border: 1px solid;
+    border-radius: $border-radius;
+
+    &.success {
+      border-color: $success_text;
+    }
+
+    &.error {
+      border-color: $error_text;
+    }
+
+    &.warning {
+      border-color: $warning_text;
+    }
+
+    &.info {
+      border-color: $info_text;
+    }
+  }
+
+  .message {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    color: $secondary-text;
+    padding: 1.5rem;
+    width: 30rem;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+
+    &.success {
+      color: $success_text;
+    }
+
+    &.error {
+      color: $error_text;
+    }
+
+    &.warning {
+      color: $warning_text;
+    }
+
+    &.info {
+      color: $info_text;
+    }
+  }
+
+  .typeIcon {
+    padding: 1.5rem;
+    font-size: 3rem;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    color: white;
+
+    &:before {
+      @include fonticon();
+    }
+
+    &.success {
+      @extend .fonticonCheck;
+      background: $success_text;
+      font-size: 2.3rem;
+    }
+
+    &.error {
+      @extend .fonticonError;
+      background: $error_text;
+    }
+
+    &.warning {
+      @extend .fonticonWarning;
+      background: $warning_text;
+    }
+
+    &.info {
+      @extend .fonticonInfo;
+      background: $info_text;
+    }
+  }
+}

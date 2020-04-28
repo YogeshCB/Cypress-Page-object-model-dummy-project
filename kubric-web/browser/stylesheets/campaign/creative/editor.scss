@@ -1,0 +1,82 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  padding: 2rem;
+  border-right: 1px solid $shadow-color;
+
+  .notification {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: gray;
+
+    &.desc {
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  .actions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+  }
+}
+
+.controller {
+  @include centralize();
+
+  .text {
+    text-align: center;
+    width: 25rem;
+    color: gray;
+
+    .name {
+      font-size: 2rem;
+      @include ellipsis();
+    }
+
+    .count {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+      display: inline-block;
+      margin-top: .5rem;
+    }
+  }
+
+  .button {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .6);
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+
+    &:hover {
+      color: black;
+      transform: scale(1.1);
+    }
+
+    &.buttonDisabled {
+      visibility: hidden;
+    }
+  }
+}
+
+.parameterContainer {
+  top: 4rem !important;
+
+  &.twoline {
+    top: 10rem !important;
+  }
+}

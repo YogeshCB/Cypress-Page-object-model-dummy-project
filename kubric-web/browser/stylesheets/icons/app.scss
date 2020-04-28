@@ -1,0 +1,445 @@
+@mixin app-icon($path) {
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('~icons/#{$path}');
+}
+
+.sidebarIconGallery {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/gallery.svg');
+}
+
+.sidebarIconApps{
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/apps.svg');
+}
+
+.sidebarIconRecent {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/recent.svg');
+}
+
+.sidebarIconStudio {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/studio.svg');
+}
+
+.sidebarIconNotifications {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/notifications.svg');
+}
+
+.sidebarIconNotificationsUnread {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('sidebar/notifications-unread.svg');
+}
+
+.statusIconClock{
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('campaign/status/clock.svg');
+}
+
+.statusIconCaution {
+  height: 2rem;
+  width: 2rem;
+  @include app-icon('campaign/status/caution.svg');
+}
+
+.iconHide {
+  height: 1.4rem;
+  width: 1.4rem;
+  @include app-icon('hide.svg');
+}
+
+.iconVideoPlay {
+  @include app-icon('play.svg');
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
+.notification {
+  @include app-icon('notification.svg');
+  width: 150px;
+  height: 150px;
+}
+.sourcing{
+  @include app-icon('sourcing.svg');
+  height: 2rem;
+  width: 2rem;
+}
+
+.iconSettingsTheme {
+  @include app-icon('settings-theme.svg');
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+
+.iconApproved {
+  @include app-icon('approved.svg');
+}
+.openLock{
+  @include app-icon('lock-open.svg');
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.closeLock{
+  @include app-icon('lock-close.svg');
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.iconFullScreen {
+  @include app-icon('fullscreen.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.iconExitFullScreen {
+  @include app-icon('exit-fullscreen.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.iconFullScreenTheme {
+  @include app-icon('fullscreen-theme.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.iconSaveTheme {
+  @include app-icon('save-disk.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+  color: white
+}
+
+.iconInfo {
+  @include app-icon('info.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.iconEmptyFolder {
+  @include app-icon('emptyBox.svg');
+  width: 16rem !important;
+  height: 10rem !important;
+}
+
+.iconAssetsNotFound {
+  @include app-icon('assets-not-found.svg');
+  width: 44rem !important;
+  height: 22rem !important;
+  margin: 2rem 0 !important;
+}
+
+.iconVideoPause {
+  @include app-icon('pause.svg');
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
+.iconPalette {
+  @include app-icon('palette.svg');
+}
+
+.iconRotate {
+  @include app-icon('rotate.svg');
+}
+
+.iconResize {
+  @include app-icon('resize.svg');
+}
+
+.iconCrop {
+  @include app-icon('crop.svg');
+}
+
+.iconVideoLoading {
+  @include app-icon('loading.svg');
+  width: 3.2rem;
+  height: .4rem;
+}
+
+.iconUpload {
+  @include app-icon('upload.svg');
+}
+
+.iconStar {
+  @include app-icon('star.svg');
+}
+
+.iconStarActive {
+  @include app-icon('star-active.svg');
+}
+
+.iconSave {
+  @include app-icon('save-disk.svg');
+}
+
+.iconTick {
+  @include app-icon('tick.svg');
+}
+
+.iconTickBlack {
+  @include app-icon('tick-black.svg');
+}
+
+.iconThemeTick {
+  @include app-icon('tick-theme.svg');
+}
+
+.iconClose {
+  @include app-icon('close.svg');
+}
+
+.iconWhiteTick {
+  @include app-icon('white_tick.svg');
+}
+
+.iconRetry {
+  @include app-icon('retry.svg');
+}
+
+.iconWhiteClose {
+  @include app-icon('white_close.svg');
+}
+
+.iconGrayClose {
+  @include app-icon('gray_close.svg');
+}
+
+.iconGrid {
+  @include app-icon('grid.svg');
+}
+
+.iconGridTheme {
+  @include app-icon('grid-theme.svg');
+}
+
+.iconProgress {
+  @include app-icon('progress.svg');
+}
+
+.iconProgressTheme {
+  @include app-icon('progress-theme.svg');
+}
+
+.iconFeed {
+  @include app-icon('rss.svg');
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.iconBlob {
+  @include app-icon('blob.svg');
+}
+
+.iconMediaLoading {
+  @include app-icon('media_loading.svg');
+}
+
+.iconImagePlaceholder {
+  @include app-icon('imageplaceholder.svg');
+}
+
+.iconFrame {
+  @include app-icon('frame.svg');
+}
+
+.iconNext {
+  @include app-icon('next.svg');
+}
+
+.iconChevronPrevious {
+  @include app-icon('chevron-prev.svg');
+}
+
+.iconChevronNext {
+  @include app-icon('chevron-next.svg');
+}
+
+.iconPrevious {
+  @include app-icon('previous.svg');
+}
+
+.iconUp {
+  @include app-icon('up.svg');
+}
+
+.iconDown {
+  @include app-icon('down.svg');
+}
+
+.iconLeftArrow {
+  @include app-icon('left-arrow.svg');
+}
+
+.facebookPublisherIcon {
+  @include app-icon('publisher/facebook.svg');
+}
+
+.iconHorizontalFlip {
+  @include app-icon('horizontal-flip.svg');
+}
+
+.iconVerticalFlip {
+  @include app-icon('vertical-flip.svg');
+}
+
+.youtubePublisherIcon {
+  @include app-icon('publisher/youtube.svg');
+  background-position-y: .5rem;
+}
+
+.cloudinaryAssetIcon {
+  @include app-icon('assets/cloudinary.svg');
+}
+
+.driveAssetIcon {
+  @include app-icon('assets/drive.svg');
+}
+
+.shutterstockAssetIcon {
+  @include app-icon('assets/shutterstock.svg');
+}
+
+.iconMovie {
+  @include app-icon('campaign/movie.svg');
+}
+
+.iconEmptyPage {
+  @include app-icon('emptypage.svg');
+}
+
+.iconEqualizer {
+  @include app-icon('equalizer.svg');
+}
+
+.iconSharedFolder {
+  @include app-icon('shared.svg');
+}
+
+.iconShare {
+  @include app-icon('ico-share.svg');
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.iconMove {
+  @include app-icon('move.svg');
+}
+
+.iconLogout {
+  @include app-icon('logout.svg');
+}
+
+.iconSettings {
+  @include app-icon('settings.svg');
+}
+
+.iconFilter {
+  @include app-icon('filter.svg');
+}
+
+.iconFilterHide {
+  @include app-icon('filter-hide.svg');
+}
+
+.iconAssetEdit {
+  @include app-icon('edit.svg');
+}
+
+.iconVersion {
+  @include app-icon('versions.svg');
+}
+
+.iconAdd {
+  @include app-icon('add.svg');
+}
+
+.iconProduct {
+  @include app-icon('product.svg');
+}
+
+.iconModel {
+  @include app-icon('model.svg');
+}
+
+.iconDownload {
+  @include app-icon('download.svg');
+}
+
+.iconAddO {
+  @include app-icon('add-o.svg');
+}
+
+.iconCB {
+  @include app-icon('copy.svg');
+}
+
+.iconCBTheme {
+  @include app-icon('copy-theme.svg');
+}
+
+.iconCBDark {
+  @include app-icon('copy-dark.svg');
+}
+
+.iconImages {
+  @include app-icon('image.svg');
+}
+
+.iconFolders {
+  @include app-icon('ico-folder.svg');
+}
+
+.iconCatalogue {
+  @include app-icon('catalogue.svg')
+}
+
+.iconMale {
+  @include app-icon('male.svg');
+}
+
+.iconFemale {
+  @include app-icon('female.svg');
+}
+
+.iconFolderFilled {
+  @include app-icon('ico-folder-filled.svg');
+}
+
+.iconMoreOptions {
+  @include app-icon('ico-more-options.svg');
+}
+
+.iconFolderShared {
+  @include app-icon('shared-folder.svg');
+}
+
+.iconTag {
+  @include app-icon('tag.svg');
+}
+
+.iconAudio {
+  @include app-icon('audio.svg');
+}
+
+.iconVideos {
+  @include app-icon('ico-video.svg');
+}
+
+.iconFonts {
+  @include app-icon('font.svg');
+}

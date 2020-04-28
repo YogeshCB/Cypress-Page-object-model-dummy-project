@@ -1,0 +1,1 @@
+export const IS_SELECTED_ID = '~!~IS~!~SELECTED~!~';

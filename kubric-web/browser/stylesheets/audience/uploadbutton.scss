@@ -1,0 +1,33 @@
+.btnContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    right: 12.5rem;
+    top: 0.94rem;
+}
+.uploadButton{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+.uploadBtn {
+  margin-right: 1rem;
+}
+
+.download {
+  margin-right: 1rem;
+}
+
+.downloadIcon {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: .3rem;
+}
+
+.label {
+  vertical-align: middle;
+}

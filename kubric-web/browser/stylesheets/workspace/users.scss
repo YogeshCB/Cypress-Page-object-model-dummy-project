@@ -1,0 +1,92 @@
+@import "../defines";
+
+$pale-grey: #dee7f0;
+
+.users {
+  background: #fff;
+  padding: 10px 0;
+  margin-right: 2rem;
+  border: 1px solid $pale-grey;
+  width: 25%;
+  max-height: 80vh;
+  overflow: auto;
+  font-weight: 400;
+
+  .user {
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 13px;
+    color: #000000;
+    padding: 0.9rem 1.2rem;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+
+    &:hover {
+      background: #fff5f9;
+    }
+  }
+}
+
+.close {
+  color: $primary-color;
+  font-size: 1.1rem;
+  margin-left: auto;
+}
+
+.head {
+  color: #505050;
+  font-size: 15px;
+  margin: 1rem 0;
+  margin-top: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+}
+
+.icon {
+  position: absolute;
+  font-size: 1.4rem;
+  line-height: 3.5rem;
+  right: 0.3rem;
+  color: gray;
+  left: auto;
+  top: 0;
+}
+
+.invite {
+  color: $primary-color;
+}
+
+.field {
+  padding: 0 16px !important;
+  border-top: 1px solid #f4f6f8;
+  border-bottom: 1px solid #f4f6f8;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding-left: 0rem !important;
+  height: 3.5rem !important;
+  border: 0 !important;
+}
+
+.smallHead {
+  color: #838383;
+  font-size: 11px;
+  padding: 0 16px;
+}
+
+.delete {
+  color: #ff0083;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  padding: 1rem 0;
+  cursor: pointer;
+  bottom: 0;
+}

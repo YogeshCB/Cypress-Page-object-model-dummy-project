@@ -1,0 +1,20 @@
+import { getTypes } from "@bit/kubric.redux.reducks.utils";
+
+export default getTypes([
+  'WORKSPACES_FETCHED',
+  'SET_WORKSPACE_DATA',
+  'WORKSPACE_SELECTED',
+  'WORKSPACE_EDIT',
+  'WORKSPACE_FETCHED',
+  'PURGE_WORKSPACE_DETAILS',
+  'UPDATE_USERS',
+  'DELETE_WORKSPACE',
+  'FETCH_WORKSPACE',
+  'SET_MESSAGE',
+  'SWITCH_WORKSPACE',
+  'INVITATIONS_FETCHED',
+  'SHOW_SWITCH_WORKSPACE',
+  'HIDE_SWITCH_WORKSPACE',
+  'CHANGE_WORKSPACE',
+  'SET_WORKSPACE',
+], 'kubric/workspace');

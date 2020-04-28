@@ -1,0 +1,47 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.status {
+  border: 5px solid $border-color;
+  border-radius: 5px;
+  &.connected {
+    border-color: $connected-color;
+  }
+}
+
+.icon {
+  width: 8rem;
+  height: 4rem;
+  background-position: center;
+}
+
+.details {
+  width: 80%;
+}
+
+.name {
+  font-weight: 500;
+  color: black;
+}
+
+.desc {
+  color: $secondary-text;
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid $border-color;
+  cursor: pointer;
+  &:last-child {
+    border: 0;
+  }
+}
+
+.accordion {
+  margin-top: 1rem;
+  .triangle {
+    top: 3rem !important;
+  }
+}

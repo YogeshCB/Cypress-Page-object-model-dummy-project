@@ -1,0 +1,272 @@
+@import "../content/defines";
+@import "../defines";
+
+$top: 6.5rem;
+
+.contractNav {
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.span, .action {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
+
+  &:hover {
+    color: $primary-color70;
+  }
+}
+
+.action {
+  color: $primary-color;
+  align-content: center;
+  margin: 0 10px;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+
+  &:hover {
+    background: #F8F6FE;
+    border-radius: 8px;
+    color: $primary-color;
+  }
+}
+.button {
+  margin: 0 !important;
+}
+.separator {
+  background: rgb(230, 237, 244);
+  transform: rotate(15deg);
+  width: 1px;
+  height: 30px;
+  margin: 0 7px;
+  position: relative;
+  vertical-align: middle;
+  align-items: center;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.border {
+  border: 2px solid #525252 !important;
+}
+
+.actionContainerNewLine {
+  display: flex;
+  width: 100%;
+}
+
+.actionContainer, .actions {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.checkbox {
+  margin-right: 8px;
+}
+.items {
+  margin-top: 65px;
+}
+.teamItems {
+  margin-top: 30px;
+}
+.actionNewLine {
+  display: flex;
+  height: 46px;
+  line-height: 46px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actionIcons {
+  width: 1.4rem;
+  height: 1.7rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.borderChecked {
+  border-color: #412d7b !important;
+  background-color: #412d7b !important;
+}
+
+.selected {
+  -webkit-transform: rotate(-45deg) !important;
+  transform: rotate(-45deg) !important;
+  border: solid #3a407c;
+  margin-top: 3px;
+}
+
+.menu {
+  right: 3rem;
+  top: 12.5rem;
+}
+
+.menuContract {
+  right: 53%;
+  top: 11.5rem;
+}
+
+.menuContractFilters {
+  right: 24.7% !important;
+}
+
+.menuItem {
+  padding: 4px 5px;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 2rem;
+}
+
+.label {
+  padding: 0 0.5rem !important;
+}
+
+.triangle {
+  border: solid $primary-color;
+  border-width: 0 1px 1px 0;
+  content: "";
+  display: inline-block;
+  height: 7px;
+  margin-top: -6px;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 7px;
+}
+
+.purple {
+  color: $primary-color !important;
+  font-weight: 700 !important;
+}
+
+.delete {
+  color: #575755 !important;
+}
+
+.searchHeadline {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  margin-left: 2rem;
+}
+
+.sortBy {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  margin-left: auto !important;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  align-self: center;
+  padding: 4px 10px;
+  padding-right: 25px;
+}
+
+.message {
+  padding: 0 2rem;
+}
+
+.pathName {
+  max-width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.select {
+  cursor: pointer !important;
+  margin: 0 1rem;
+  position: relative;
+
+  &:hover {
+    color: #0070E0 !important;
+  }
+}
+
+.folders {
+  right: 10%;
+  top: $top;
+  max-height: 40vh;
+  overflow: auto;
+  z-index: 21;
+  width: 220px;
+}
+.icon {
+  position: absolute;
+  font-size: 1.4rem;
+  line-height: 3.5rem;
+  right: 0.3rem;
+  color: gray;
+  left: auto;
+  top: 0;
+}
+.field {
+  padding: 0 16px !important;
+  border-top: 1px solid #f4f6f8;
+  border-bottom: 1px solid #f4f6f8;
+  margin-bottom: 1rem;
+}
+.input {
+  padding-left: 0rem !important;
+  height: 3.5rem !important;
+  border: 0 !important;
+}
+.header {
+  cursor: default !important;
+  position: absolute;
+  width: 100%;
+  padding: 4px 6px;
+
+  &:hover {
+    background: #fff !important;
+  }
+}
+
+.header h5 {
+  cursor: default;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+.teams {
+  right: 16.5%;
+  top: $top;
+  z-index: 21;
+}
+
+.size {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}

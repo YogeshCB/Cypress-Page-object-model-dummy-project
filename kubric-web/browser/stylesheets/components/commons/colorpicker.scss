@@ -1,0 +1,36 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+$size: 2rem;
+
+.container {
+  height: $size;
+  width: $size;
+  position: relative;
+
+  &:hover {
+    .color {
+      box-shadow: 0 0 .7rem 0 rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+.input {
+  position: absolute;
+  top: -.5rem;
+  left: -.5rem;
+  height: $size + .5rem;
+  width: $size + .5rem;
+  opacity: 0;
+  z-index: 10;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.color {
+  height: $size;
+  width: $size;
+  border-radius: $size/2;
+  border: 1px solid $border-color;
+  z-index: 1;
+}

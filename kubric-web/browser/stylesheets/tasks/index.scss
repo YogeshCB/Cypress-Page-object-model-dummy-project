@@ -1,0 +1,23 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+.notasks {
+  color: $secondary-text;
+  padding: $content-padding;
+  min-height: 100%;
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.tasks {
+  padding: $content-padding;
+}
+
+.task {
+  @include ellipsis();
+  width: 29%;
+  margin: 0 0 3rem 3rem;
+  float: left;
+}

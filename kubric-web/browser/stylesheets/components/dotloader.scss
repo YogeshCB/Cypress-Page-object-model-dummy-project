@@ -1,0 +1,109 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes blink1 {
+  0% {
+    border-color: $gray_ea;
+  }
+  10% {
+    border-color: $gray_ea;
+  }
+  20% {
+    border-color: $kubric-yellow;
+  }
+  35% {
+    border-color: $gray_ea;
+  }
+  40% {
+    border-color: $gray_ea;
+  }
+  100% {
+    border-color: $gray_ea;
+  }
+}
+
+@keyframes blink2 {
+  0% {
+    border-color: $gray_ea;
+  }
+  30% {
+    border-color: $gray_ea;
+  }
+  40% {
+    border-color: $kubric-pink;
+  }
+  55% {
+    border-color: $gray_ea;
+  }
+  100% {
+    border-color: $gray_ea;
+  }
+}
+
+@keyframes blink3 {
+  0% {
+    border-color: $gray_ea;
+  }
+  50% {
+    border-color: $gray_ea;
+  }
+  60% {
+    border-color: $kubric-blue;
+  }
+  75% {
+    border-color: $gray_ea;
+  }
+  100% {
+    border-color: $gray_ea;
+  }
+}
+
+@keyframes blink4 {
+  0% {
+    border-color: $gray_ea;
+  }
+  70% {
+    border-color: $gray_ea;
+  }
+  80% {
+    border-color: $kubric-violet;
+  }
+  95% {
+    border-color: $gray_ea;
+  }
+  100% {
+    border-color: $gray_ea;
+  }
+}
+
+.dot {
+  height: 0;
+  width: 0;
+  border: 3px solid $gray_ea;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 1px 0 0;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.dot1 {
+  animation-name: blink1;
+}
+
+.dot2 {
+  animation-name: blink2;
+}
+
+.dot3 {
+  animation-name: blink3;
+}
+
+.dot4 {
+  animation-name: blink4;
+}

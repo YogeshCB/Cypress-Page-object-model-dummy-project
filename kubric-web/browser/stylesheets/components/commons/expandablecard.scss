@@ -1,0 +1,9 @@
+.expandable {
+  transition-timing-function: ease-in-out;
+  transition-property: max-height;
+  transition-duration: .2s;
+  overflow: hidden;
+  &.expanded {
+    max-height: 1500rem;
+  }
+}

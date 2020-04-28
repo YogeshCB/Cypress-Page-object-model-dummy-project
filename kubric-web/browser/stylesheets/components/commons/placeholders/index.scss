@@ -1,0 +1,62 @@
+@import "../../../../../node_modules/@bit/kubric.components.styles.commons/styles/mixins";
+@import "../../../../../node_modules/@bit/kubric.components.styles.commons/styles/colors";
+
+@mixin animate($animationName, $opacityStep, $transformStep) {
+  @keyframes #{$animationName} {
+    0% {
+      opacity: 1;
+    }
+    12% {
+      opacity: 1 - $opacityStep;
+      transform: scale(1 + $transformStep);
+    }
+    25% {
+      opacity: 1 - 2 * $opacityStep;
+      transform: scale(1 + 2 * $transformStep);
+    }
+    50% {
+      opacity: 1 - 3 * $opacityStep;
+      transform: scale(1 + 3 * $transformStep);
+    }
+    75% {
+      opacity: 1 - 2 * $opacityStep;
+      transform: scale(1 + 2 * $transformStep);
+    }
+    87% {
+      opacity: 1 - $opacityStep;
+      transform: scale(1 + $transformStep);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-name: $animationName;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.image {
+  height: 10rem;
+  width: 15rem;
+  @include animate(fade, 0.2, 0.0125);
+}
+
+.carouselContainer {
+  display: inline-block;
+  white-space: nowrap;
+  > div {
+    margin-right: 2rem;
+  }
+}
+
+.frameContainer {
+  @include centralize();
+  background: $border-color;
+  @include animate(fade-frame, 0.2, 0.005);
+  > div {
+    height: 25rem;
+    width: 25rem;
+  }
+}

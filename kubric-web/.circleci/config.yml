@@ -1,0 +1,61 @@
+version: 2
+jobs:
+  build_beta:
+    docker:
+      - image: circleci/node:10.16.0
+
+    working_directory: ~/release-app
+    steps:
+      - checkout
+
+      - add_ssh_keys:
+          fingerprints:
+            - "02:00:a8:f4:76:49:35:a7:fa:07:1c:de:e3:30:46:20"
+      - run:
+          shell: /bin/bash
+          environment:
+            APP_NAME: app
+            BUILD_TYPE: release
+            DEPLOYMENT_SERVER: 35.199.154.65
+            PORT: 8500
+          command: |
+            cd scripts
+            chmod 777 deploy.sh
+            ./deploy.sh
+  build_production:
+    docker:
+      - image: circleci/node:10.16.0
+
+    working_directory: ~/production-app
+    steps:
+      - checkout
+
+      - add_ssh_keys:
+          fingerprints:
+            - "02:00:a8:f4:76:49:35:a7:fa:07:1c:de:e3:30:46:20"
+      - run:
+          shell: /bin/bash
+          environment:
+            APP_NAME: app
+            BUILD_TYPE: production
+            DEPLOYMENT_SERVER: 35.199.154.65
+            PORT: 9000
+          command: |
+            cd scripts
+            chmod 777 deploy.sh
+            ./deploy.sh
+
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build_beta:
+          filters:
+            branches:
+              only:
+                - development
+      - build_production:
+          filters:
+            branches:
+              only:
+                - release

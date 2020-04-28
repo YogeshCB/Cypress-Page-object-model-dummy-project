@@ -1,0 +1,516 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.drawer {
+  width: $drawer-width;
+  top: 12.7rem;
+  border-right: 1px solid #f4f6f8;
+  border-top: 1px solid #f4f6f8;
+  box-shadow: none;
+}
+
+.metaActions {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 16px;
+  margin-top: 8px;
+  div {
+    text-align: center;
+  }
+}
+.divider {
+  width: 1px;
+  height: 35px;
+  background: #f4f6f8;
+}
+.drawerContent {
+  height: calc(100% - 4rem) !important;
+  border-left: 1px solid #eaeaec;
+}
+.fullscreen {
+  right: 4px;
+  top: 216px;
+}
+.copy {
+  left: 4px;
+  top: 216px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  visibility: hidden;
+  width: max-content;
+  background-color: #2f2f2f;
+  color: #fff;
+  text-align: center;
+  padding: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 200ms;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  visibility: visible;
+}
+.descInput {
+  height: 10rem !important;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.content {
+  padding: 0 1.5rem;
+  position: relative;
+  height: 100%;
+  animation: fadeIn ease-in 0.5s;
+}
+
+.colorTooltip {
+  padding: 4px 6px;
+  color: #fff;
+  background: #525252;
+  border-radius: 14px;
+  left: 0;
+  right: 0;
+  font-size: 1.1rem;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 60px;
+  top: -30px;
+  position: absolute;
+}
+.tooltip {
+  padding: 4px 6px;
+  color: #fff;
+  border-radius: 14px;
+  left: 0;
+  right: 0;
+  font-size: 1.1rem;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 60px;
+}
+.colorSqr {
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+
+.svgStyle {
+  height: 250px;
+}
+.url {
+  color: #333;
+  cursor: pointer;
+  text-transform: none;
+  text-decoration: none;
+  display: block;
+}
+
+.palette, .color {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  position: relative;
+  flex-wrap: nowrap;
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  .patch {
+    height: 2.5rem;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    &:hover {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+}
+
+.key {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  color: #969595;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.delete {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;    
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2);
+
+  &:hover {
+    color: #666;
+  }
+}
+.staticForm {
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+.feedback {    
+  padding: 4px 6px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 3rem;
+  border-radius: 14px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 65px;
+}
+.header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #bbb;
+}
+.paletteContainer {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.imgContainer {
+  height: 250px;
+  position: relative;
+  text-align: center;
+  background: url('https://console.cloudinary.com/console/v365/0335ac7da0d4512e5628665422439c51.png');
+  width: 100%;
+  overflow: hidden;
+
+  .img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.uploadContainer {
+  height: auto;
+}
+.detailValue {
+  width: 160px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+}
+
+
+.value {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block !important;
+  top: 0.8rem;
+}
+
+.desc {
+  height: 7rem;
+}
+
+.licenseForm {
+  text-align: center;
+  max-height: 800px;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+.buttonLicense {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: #fff;
+}
+.subscriptions {    
+  height: 60vh;
+  position: relative;
+  overflow: auto;
+}
+
+.imageLicensed {
+  max-width: 400px;
+  height: auto;
+  cursor: pointer;
+}
+
+.subscription {
+  padding: 10px;
+  text-align: left;
+  margin: 5px 0;
+  cursor: pointer;
+
+  span {
+    color: #969595;
+  }
+
+  &:hover {
+    background: #f2f2f2;
+  }
+
+  p {
+    color: #333;
+  }
+}
+
+.selectedSubscription {
+  background: #f2f2f2;
+}
+.headerDrawer {
+  z-index: 1 !important;
+  background: transparent !important;
+}
+.headerTaggingForm {
+  margin-top: 5rem;
+}
+
+
+.downloadBtn a {
+  color: #fff;
+}
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.formActionVideo{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.visualActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 96px;
+  width: 28px;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #000;
+  opacity: 0.7;
+  top: 8rem;
+}
+.visualActionsTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 28px;
+  width: 100px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #525252;
+}
+.downloadIcon {
+  color: #fff;
+}
+.editName {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.editIcon {
+  margin-top: -10px;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #5d5d5d;
+}
+.variantContent {
+  padding: 4px;
+}
+
+.button {
+  margin-left: 2rem;
+  color: #29146b  !important;
+  border: 1px solid #29146b !important;
+  &:hover {
+      background: #F8F6FE !important;
+      color: #29146b !important;
+  }
+}
+.confirmButton {
+  margin: auto;  
+}
+.imgVariant {
+  height: 95px;
+  overflow: hidden;
+  width: 100%;
+  background: url('https://console.cloudinary.com/console/v365/0335ac7da0d4512e5628665422439c51.png');
+}
+.iconAction {
+  color: #29146b;
+  width: 2rem;
+  height: 2rem;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.formIcon {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  &:hover {
+    background: #f6f2ff;
+    border-radius: 50%;
+  }
+}
+.tag {
+  color: black;
+}
+.duration {
+  bottom: 0 !important;
+}
+.audioContainer {
+  height: 250px;
+  width: 100%;
+}
+.variantContainer {
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.variantCard {        
+  width: 48%;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.actionsForVariant {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.variantCard img {
+  width: 100%;
+}
+.name, .date  {
+  @include ellipsis();
+  width: inherit;
+  display: block;
+}
+.activeVariant {
+  border: 1px solid #29146b !important;
+}
+.date {
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 12px;
+  margin-bottom: 0.6rem;
+}
+.name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+
+.editForm {
+  height: 100%;
+  position: relative;
+}
+
+.statics {
+  display: flex;
+}
+
+.staticField {
+  margin-right: 16rem;
+}
+
+.fields {
+  overflow: auto;
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+.tag {
+  max-width: 15rem !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid #e3eaf2 !important;
+  font-size: 14px !important;
+}
+
+.saveIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+}
+.actions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: right;
+  justify-content: space-around;
+  display: flex;
+  background: white;
+  z-index: 10;
+  box-shadow: 0px -2px 3px 0px $shadow-color;
+  height: 4rem;
+}

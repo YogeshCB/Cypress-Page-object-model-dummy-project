@@ -1,0 +1,38 @@
+.folderGrid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-column-gap: 8px;
+    &:after {
+        content: '';
+        flex: auto;
+    }
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.title, .selectAction {
+  color: #29146b;  
+  font-weight: 500; 
+}
+.selectAction {
+  font-size: 14px;
+}
+.title {
+  font-size: 14px;
+}
+.separator {
+  background: rgb(230, 237, 244);
+  height: 3px;
+  width: 85%;
+}
+
+.selectAction {
+  cursor: pointer;
+}
+  

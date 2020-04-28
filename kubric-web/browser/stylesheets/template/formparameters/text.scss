@@ -1,0 +1,12 @@
+.text {
+  & > div {
+    margin-bottom: 1rem;
+  }
+  & > div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.field {
+  height: 6rem;
+}

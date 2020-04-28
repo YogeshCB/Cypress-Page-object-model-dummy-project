@@ -1,0 +1,6 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.notfound {
+  @include centralize();
+  height: 100%;
+}

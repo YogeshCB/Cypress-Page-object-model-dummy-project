@@ -1,0 +1,53 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import '../../icons/app';
+
+$margin: .3rem;
+
+.colorpalette {
+  @include clearfix();
+  width: 17rem;
+  background: white;
+}
+
+.color {
+  @include color-blip();
+  float: left;
+  border: 0;
+  &.border {
+    border: 1px solid $border-color;
+  }
+  &:nth-child(5n+6) {
+    clear: both;
+  }
+}
+
+.unselected {
+  margin: $margin;
+}
+
+.tick {
+  @extend .iconWhiteTick;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.selected {
+  transform: scale(1.2);
+}
+
+.selectedImage {
+  border-color: white;
+}
+
+.selectedParent {
+  position: relative;
+  float: left;
+  margin: $margin;
+}
+
+.selectedOverlay {
+  @include overlay();
+  background: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,151 @@
+@import "./defines";
+@import "./components/commons/overlay";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.commons.spinner/styles";
+@import "./content/defines";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "./icons/shell";
+
+$font-family: 'Proxima Nova', sans-serif;
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-700.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817601/fonts/Proxima-Nova-400.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-300.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-500.ttf);
+  font-weight: 500;
+}
+
+@mixin headerDimensions($height, $padding, $logo-font) {
+  .app-header {
+    height: $height;
+  }
+  .logoContainer {
+    .heading {
+      font-size: $logo-font;
+    }
+  }
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  font-family: $font-family !important;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: normal;
+  height: 100%;
+  position: relative;
+}
+
+header, div, body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  @include centralize();
+}
+
+.apploaded {
+  left: $panel-width !important;
+  background: $black_overlay !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.app-container {
+  height: 100%;
+
+  .app-header {
+    background-color: white;
+    @include centralize-vertical();
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: $panel-width;
+    z-index: 100;
+    box-shadow: 0 1px 0px 0 rgba(232, 232, 232, 0.5);
+  }
+
+  #pageheading {
+    margin-left: 27rem;
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    color: $secondary-text;
+  }
+
+  #avatar {
+    position: absolute;
+    left: 0;
+    width: $panel-width;
+  }
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    width: 23rem;
+
+    .iconLogo {
+      cursor: pointer;
+      height: $logo-height;
+      width: $logo-width;
+      background-position: left;
+    }
+
+    .heading {
+      padding-left: .5rem;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .page-content {
+    position: relative;
+    height: 100%;
+    background: $bg-color;
+  }
+
+  .content {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.app-container {
+  @include headerDimensions($header-height, $desktop-header-padding, 1.9rem);
+}

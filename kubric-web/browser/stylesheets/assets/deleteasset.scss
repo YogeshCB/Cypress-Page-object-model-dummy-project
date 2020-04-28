@@ -1,0 +1,13 @@
+.icon {
+    color: #CA0A5A !important;
+}
+
+.button {
+    margin-left: 2rem;
+    color: #CA0A5A  !important;
+    border: 1px solid #CA0A5A !important;
+    &:hover {
+        background: #FFF5F9 !important;
+        color: #CA0A5A !important;
+    }
+}

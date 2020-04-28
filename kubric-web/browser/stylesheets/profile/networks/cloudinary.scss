@@ -1,0 +1,15 @@
+@import '../../components//commons/button.scss';
+
+.button, .buttonClass {
+  float: right;
+  margin-top: 2rem;
+}
+
+.buttonClass {
+  @include button()
+}
+
+.danger {
+  color: #d03658;
+  margin-right: 2rem;
+}

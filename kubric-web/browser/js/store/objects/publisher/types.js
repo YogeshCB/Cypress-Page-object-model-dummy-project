@@ -1,0 +1,14 @@
+import { getTypes } from "@bit/kubric.redux.reducks.utils";
+
+export default getTypes([
+  'SHOW_PUBLISHER',
+  'HIDE_PUBLISHER',
+  'PUBLISH_OPTIONS_FETCHED',
+  'PUBLISHER_FIELD_CHANGE',
+  'PUBLISHER_FIELD_SELECTED',
+  'PUBLISHER_FIELD_UNSELECTED',
+  'SET_PAGE',
+  'OUTPUT_FORMAT_SELECTED',
+  'PUBLISHER_CHANNEL_ADDED',
+  'PUBLISHER_CHANNEL_REMOVED'
+], 'kubric/publisher');

@@ -1,0 +1,17 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../../defines";
+
+.container {
+	display: flex;
+	align-items: center;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.label {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	margin-left: 0.5rem;
+}

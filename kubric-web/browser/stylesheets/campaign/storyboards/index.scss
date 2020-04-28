@@ -1,0 +1,89 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+@mixin videoDimensions($width) {
+  width: $width !important;
+  height: $width/1.6 !important;
+}
+
+$video-details-height: 2rem;
+$drop-border-width: 1px;
+$search-field-container: 7rem;
+$card-margin: 1.5rem;
+$video-width: 29rem;
+
+.content {
+  overflow: hidden !important;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected {
+  border: 0;
+  vertical-align: middle;
+}
+
+.selectedParent {
+  position: relative;
+  display: inline-block;
+}
+
+.selectedOverlay {
+  @include overlay();
+  margin: $card-margin;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.emptyPage {
+  position: relative;
+}
+
+.tick {
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url('../../../icons/tick.svg');
+}
+
+.scroller {
+  position: absolute;
+  top: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.filterContainer {
+  border-bottom: 1px solid $gray_e6 !important;
+  height: 5rem !important;
+  line-height: 5rem !important;
+}
+
+.storyboardsContainer {
+  margin-top: 1rem;
+}
+
+.video {
+  @include videoDimensions($video-width);
+}
+
+.videocard {
+  margin: $card-margin;
+  cursor: pointer;
+  float: left;
+
+  .details {
+    width: $video-width;
+
+    .name {
+      @include ellipsis();
+    }
+  }
+}

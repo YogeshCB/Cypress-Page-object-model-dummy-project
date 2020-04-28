@@ -1,0 +1,43 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  position: relative;
+  display: inline-block;
+  height: 9rem;
+  width: 9rem;
+  text-align: center;
+  &.actionable:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+}
+.name {
+  margin-top: 12px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.blob {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+.fitImage {
+  background-size: contain;
+  height: 16rem;
+}
+
+.attribution {
+  text-align: center;
+  > a {
+    color: white;
+  }
+}
+
+.overlay {
+  @include overlay();
+  color: white;
+}

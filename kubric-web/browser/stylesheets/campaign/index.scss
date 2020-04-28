@@ -1,0 +1,70 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../content/defines";
+@import "../defines";
+
+$header-padding: 2rem;
+$name-height: 1.6rem;
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content {
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.page2 {
+    top: 0;
+  }
+
+  &.page-1 {
+    top: 0;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid $gray_ea;
+  padding: 0 $header-padding;
+  height: $header-height;
+}
+
+.name {
+  font-size: $name-height;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 0.6rem;
+  color: #000;
+}
+
+.section {
+  font-size: 1.3rem;
+  padding: 1rem 0.5rem;
+}
+
+.section, .seperator {
+  &.selected, &.done {
+    color: $primary-color;
+  }
+
+  &.pending {
+    color: gray;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}

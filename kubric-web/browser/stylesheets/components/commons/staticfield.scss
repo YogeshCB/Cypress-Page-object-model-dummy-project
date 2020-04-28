@@ -1,0 +1,28 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.field {
+  position: relative;
+  width: 100%;
+  .label {
+    position: absolute;
+    top: 1rem;
+  }
+  .value {
+    padding: 2rem 0;
+    height: $field-height;
+    box-sizing: content-box;
+    font-weight: normal;
+    @include centralize-vertical();
+  }
+  .icon {
+    clear: left;
+    position: absolute;
+    top: 2.63rem;
+    right: 0;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 20px;
+  }
+}

@@ -1,0 +1,95 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "../../defines";
+
+.keywords {
+  padding-bottom: 1rem;
+
+  .icon {
+    vertical-align: top;
+    background: #bdbdbd;
+    border-radius: 2.4rem;
+  }
+
+  .path {
+    fill: transparent;
+    stroke-width: .4rem;
+    stroke: #fff;
+  }
+
+  .tag {
+    padding: 0 3.2rem 0 1.2rem;
+    color: $lighter-black;
+    background: #eee;
+    border-radius: 3.2rem;
+    line-height: 3.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.4rem;
+    overflow: hidden;
+    margin-right: .25rem;
+    display: inline-block;
+    position: relative;
+
+    .iconTagClose {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      padding: 0.4em;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+
+  .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .iconContainer {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    padding: .6rem;
+    background: white;
+  }
+
+  .iconAdd {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: white;
+  }
+
+  .addText {
+    position: absolute;
+    background: white;
+    color: $primary-color;
+    border-radius: 4px;
+    right: -.1rem;
+    top: 3rem;
+    padding: 0 2rem;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+@media #{$small-only} {
+  .keywords {
+    .tag {
+      max-width: 25rem;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .keywords {
+    .tag {
+      max-width: 50rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.infiniteScroller {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: transparent;
+}
+
+.spinnerContainer {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+}
+
+.spinnerOverlay {
+  background: transparent;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+}

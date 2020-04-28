@@ -1,0 +1,16 @@
+<div class="radioField" id="${input.id}">
+    <div class="label">${input.label}</div>
+    <div class="buttons clearfix">
+        <for(option in input.options)>
+            <div class="field">
+                <div class="radio">
+                    <input type="radio" id="${option.value}" name="${input.id}" value="${option.value}">
+                    <div class="ring">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <label for="${option.value}">${option.name}</label>
+            </div>
+        </for>
+    </div>
+</div>

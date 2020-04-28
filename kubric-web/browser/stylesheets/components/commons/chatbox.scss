@@ -1,0 +1,60 @@
+@import "../../defines";
+
+$border-color: #e7e7e9;
+
+.container {
+  min-height: 4.2rem;
+  position: relative;
+  max-height: 8rem;
+
+  > * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  $font: 1.5rem;
+  $padding: 1.15rem;
+
+  .input {
+    min-height: $font + (2*$padding);
+    font-size: $font;
+    padding: $padding 4rem $padding $padding;
+    outline: none;
+    float: left;
+    max-height: 8rem;
+    width: 100%;
+    overflow: auto;
+
+    .line {
+      margin: 0;
+      min-height: 1.8rem;
+    }
+
+    .tag {
+      color: #1ea7fd;
+      cursor: pointer;
+      font-weight: 400;
+    }
+
+    .placeholder {
+      color: gray;
+    }
+  }
+
+  .send {
+    position: absolute;
+    right: 0;
+    font-size: 1.8rem;
+    color: $primary-color;
+    cursor: pointer;
+    padding: 1rem $padding;
+    box-sizing: content-box;
+
+    &:hover {
+      color: $primary-color70;
+    }
+  }
+
+}

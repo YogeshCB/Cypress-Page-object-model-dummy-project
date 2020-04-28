@@ -1,0 +1,80 @@
+.uploadDialog {
+  width: 440px;
+  height: 40px;
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+  z-index: 1000;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #1b1334;
+  .header {
+    color: rgba(255, 255, 255, 0.64);
+    position: relative;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    font-weight: 500;
+    background: #1b1334;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .spinnerStyles {
+    height: 40px;
+    width: 20px;
+    margin-left: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    align-self: center;
+    background: transparent;
+  }
+}
+.shrink {
+  right: 23% !important;
+}
+.uploadTasks {
+  max-height: 176px;
+  height: fit-content;
+  overflow-y: scroll;
+}
+.triangleExpanded {
+  top: 10%;
+}
+.expanded {
+  position: relative;
+}
+.expandedUploadDialog {
+  height: 225px;
+}
+.invert {
+  transform: rotate(225deg) !important;
+  margin-top: -3px !important;
+}
+.triangle {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  height: 7px;
+  margin-top: -7px;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 7px;
+}
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.minimizer {
+  margin-left: auto;
+}

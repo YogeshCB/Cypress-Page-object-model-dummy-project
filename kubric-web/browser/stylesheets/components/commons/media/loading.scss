@@ -1,0 +1,92 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  position: relative;
+  display: inline-block;
+  height: 220px;
+  width: 220px;
+  background: #fff;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.refresh {
+  color: #29146b;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  text-align: left;
+  left: 15px;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0;
+  height: 32px;
+  color: #646f79;
+  font-weight: 300;
+}
+
+.containerProgress {
+  width: 65%;
+  display: block !important;
+  height: 0.8rem;
+  background: #e9e3ff;
+  position: relative;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.bar {
+  background-color: #29146b;
+  border-radius: 4px;
+}
+.iconRetry {
+  width: 4rem;
+  height: 4rem;
+}
+.icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 4rem 0;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.message {
+  line-height: 1rem;
+  text-align: left;
+  color: rgba(100, 111, 121, 0.64);
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  font-weight: 400;
+}
+
+.fitImage {
+  background-size: cover;
+  height: 16rem;
+}
+
+.attribution {
+  text-align: center;
+
+  > a {
+    color: white;
+  }
+}
+
+.overlay {
+  @include overlay();
+  color: white;
+}

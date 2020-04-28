@@ -1,0 +1,142 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+$card-margin: 1%;
+$card-count: 4;
+
+@mixin getColor($color) {
+  background: $color;
+  position: relative;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.filterContainer {
+  border-radius: 6px;
+  height: 40px !important;
+  line-height: 40px !important;
+}
+
+.campaignCard {
+  width: (100/$card-count) - $card-margin;
+  margin: 1.5rem $card-margin 0 0;
+  box-shadow: none;
+  border-radius: 4px;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  float: left;
+}
+
+.row {
+  cursor: pointer;
+
+  &:hover {
+    background: #f2f2f2 !important;
+  }
+}
+
+.gridContainer {
+  top: 4rem !important;
+}
+
+.table {
+  top: 8rem !important;
+}
+
+.columnStatus {
+  min-width: 200px;
+
+  span {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #f2f5f8;
+    position: relative;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+}
+
+.gray {
+  @include getColor(gray);
+}
+
+.red {
+  @include getColor(#f84f4c);
+}
+
+.blue {
+  @include getColor(#407cff);
+}
+
+.green {
+  @include getColor(#74d38e);
+}
+
+.yellow {
+  @include getColor(#ffd394);
+}
+
+.rightdiv {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+}
+
+.share {
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 3rem;
+  line-height: 5rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  z-index: 6;
+  top: 6rem;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.container {
+  top: 10rem !important;
+  right: 1rem !important;
+  z-index: 6 !important;
+}
+
+.columnDate {
+  min-width: 200px;
+}
+
+.columnName {
+  min-width: 300px;;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  float: left !important;
+}
+
+.actions {
+  margin-top: 2rem;
+}
+
+.create {
+  margin-right: 1rem;
+}
+
+.columnFormat {
+  width: 10rem;
+}

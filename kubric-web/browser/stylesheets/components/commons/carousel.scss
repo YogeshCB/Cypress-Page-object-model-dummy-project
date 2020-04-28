@@ -1,0 +1,22 @@
+.carousel {
+  $scroll-height: 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .scrollWrapper {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    top: $scroll-height;
+    padding-bottom: $scroll-height;
+  }
+  .content {
+    white-space: nowrap;
+    display: inline-block;
+    > * {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

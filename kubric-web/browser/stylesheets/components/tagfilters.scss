@@ -1,0 +1,52 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../defines";
+
+.tagfilters {
+  display: flex;
+  background: white;
+
+  .filter {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid $border-color;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  .headingContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+
+    .heading {
+      white-space: nowrap;
+      display: inline-block;
+      padding-right: 1rem;
+    }
+  }
+
+  .menuContainer {
+    width: 1.8rem;
+  }
+
+  .addFilter {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid $primary-color;
+    text-align: center;
+    border-radius: 5rem;
+    box-sizing: content-box;
+    cursor: pointer;
+    color: $primary-color;
+    user-select: none;
+
+    &:hover {
+      background: $primary-color10;
+    }
+  }
+}

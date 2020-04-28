@@ -1,0 +1,19 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.selectedOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(41, 20, 107, 0.44);
+}
+
+.tick {
+  color: #fff;
+  font-size: 4rem;
+}
+

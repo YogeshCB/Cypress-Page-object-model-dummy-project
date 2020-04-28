@@ -1,0 +1,31 @@
+@import "../defines";
+
+.status {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 2rem;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+  background: #fff;
+  line-height: 32px;
+  border-top: 1px solid #dee7f0;
+  border-right: 1px solid #dee7f0;
+
+  span {
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.icon {
+  width: 1.4rem;
+  height: 1.82rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}

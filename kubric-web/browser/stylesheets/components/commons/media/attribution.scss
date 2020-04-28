@@ -1,0 +1,25 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.attribution {
+  padding: .25rem .5rem;
+  background-color: $black_overlay;
+  color: white;
+  position: absolute;
+  font-size: 1.1rem;
+  z-index: 1;
+  > a {
+    color: white;
+  }
+  &.bottom {
+    bottom: 0;
+  }
+  &.right {
+    right: 0;
+  }
+  &.top {
+    top: 0;
+  }
+  &.left {
+    left: 0;
+  }
+}

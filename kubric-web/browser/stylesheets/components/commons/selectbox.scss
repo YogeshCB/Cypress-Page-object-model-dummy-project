@@ -1,0 +1,128 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../../defines";
+
+.selectbox {
+  cursor: pointer;
+  color: $input-label;
+  height: $field-height;
+  box-sizing: content-box;
+  width: 100%;
+
+  &.disabled {
+    opacity: .5;
+
+    &:hover {
+      .triangle {
+        border-top-color: $border-color;
+      }
+    }
+  }
+
+  &.noLabel {
+    border: 2rem solid transparent;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  &:hover {
+    .triangle {
+      border-top-color: $gray_89;
+    }
+  }
+
+  .menuItem {
+    height: 3.8rem !important;
+  }
+
+  .selected {
+    $padding: .8rem;
+    height: $field-height;
+    box-sizing: border-box;
+    width: 100%;
+    padding: $padding 0 0 0;
+    line-height: $field-height - $padding;
+    border-bottom: 1px solid $border-color;
+    font-weight: 400;
+
+    &.hasValue {
+      color: $black_16;
+    }
+
+    &.erred {
+      border-bottom: 2px solid $input-error;
+    }
+  }
+
+  .menu {
+    left: 0;
+    background-color: white;
+    color: $lighter-black;
+    max-height: 27rem;
+    overflow: auto;
+  }
+
+  .selectedOption {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .posWrapper {
+    position: relative;
+  }
+
+  .triangleContainer {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: white;
+    z-index: 10;
+    bottom: .5rem;
+    right: 0;
+    width: 2.5rem;
+    justify-content: center;
+  }
+
+  .triangle {
+    border-color: $border-color;
+    border-width: 7px;
+    border-style: solid;
+    top: 1.8rem;
+    border-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .hint {
+    position: absolute;
+    font-size: 1.6rem;
+    top: 1rem;
+    line-height: normal;
+    font-weight: $field-label-weight;
+    z-index: 0;
+    user-select: none;
+  }
+
+  .hintSelected {
+    position: absolute;
+    top: -1rem;
+    font-size: 1.2rem;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .35s;
+    transition-property: top, color, font-size;
+  }
+
+  .menuContainer {
+    z-index: 10;
+    height: $field-height;
+  }
+
+  .error {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .35s;
+    transition-property: color;
+    font-size: 1.1rem;
+    color: $input-error;
+  }
+}

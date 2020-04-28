@@ -1,0 +1,47 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../../defines";
+
+.halfcard {
+  bottom: 0;
+
+  &.contract {
+    .content {
+      max-height: 0;
+    }
+  }
+
+  &.expand {
+    .content {
+      max-height: 10000px;
+    }
+  }
+
+  position: fixed;
+
+  .content {
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: max-height;
+    transition-duration: .2s;
+    border: 1px solid $border-color;
+    border-top-width: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .heading {
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 500;
+    background-color: $primary-color;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

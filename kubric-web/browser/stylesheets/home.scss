@@ -1,0 +1,68 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+$cardHeight: 20rem;
+$cardWidth: 30rem;
+$cardPadding: 1.5rem;
+$cardMargin: 1rem;
+$cardBorder: 1px solid $border-color;
+
+@mixin card() {
+  float: left;
+  margin: $cardMargin;
+  border: $cardBorder;
+  border-radius: 5px;
+}
+
+.pcContainer {
+  padding: 0 !important;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.cardPlaceholder {
+  @include card();
+}
+
+.card {
+  cursor: pointer;
+  background: white;
+  height: $cardHeight;
+  width: $cardWidth;
+  color: black;
+  padding: $cardPadding;
+  @include card();
+
+  .fields {
+    padding: 1rem 0;
+  }
+
+  .field {
+    padding: .5rem 0;
+
+    &.completed {
+      color: $success_icon;
+    }
+
+    &.erred {
+      color: $error_icon;
+    }
+
+    &.inprogress {
+      color: $warning_icon;
+    }
+  }
+
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-bottom: .5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    color: gray;
+  }
+}

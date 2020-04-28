@@ -1,0 +1,135 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "../../../../defines";
+
+.inactive {
+  opacity: .5;
+}
+
+.container {
+  $padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+
+  &.actionable {
+    &:hover {
+      .nameTile {
+        color: #0070E0;
+      }
+    }
+  }
+}
+
+.nameFont {
+  font-size: 1.6rem !important;
+}
+
+.size {
+  width: 18.0rem;
+  height: 18.0rem;
+}
+
+.folderIcon {
+  width: 6.0rem;
+  height: 18.8rem;
+}
+
+.nameTile {
+  color: rgb(100, 111, 121);
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 22.0rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  border-top: .1rem solid rgba(0, 0, 0, 0.05);
+  font-size: 1.4rem;
+}
+
+.float {
+  float: right;
+  margin-left: 2rem;
+}
+
+.createFolder {
+  border: .1rem solid #e3eaf2 !important;
+  text-transform: none !important;
+  background: #fff !important;
+  border-radius: .8rem !important;
+  color: $primary-color !important;
+  font-size: 1.4rem !important;
+  margin-left: 2rem;
+}
+
+.field {
+  width: 90% !important;
+  float: right;
+}
+
+.link {
+  color: $primary-color !important;
+  margin: 1rem;
+  margin-right: 4rem;
+}
+
+.nameList {
+  color: #333333;
+}
+
+.toggleTile {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  cursor: pointer;
+}
+
+.toggleList {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  margin: auto;
+  bottom: 0;
+  height: 3.2rem;
+}
+
+.shared {
+  position: absolute;
+  bottom: 3.8rem;
+  right: 3.8rem;
+  width: 3.0rem;
+  height: 3.0rem;
+}
+
+.newFolderForm {
+  text-align: center;
+
+  .header {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+}
+
+.spinner {
+  width: 2rem;
+}
+
+.size {
+  width: 12.0rem;
+  height: 12.0rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.buttons {
+  margin-top: 2rem;
+}

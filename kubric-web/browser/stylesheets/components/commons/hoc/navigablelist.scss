@@ -1,0 +1,55 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  width: 100%;
+  border: 1px solid #e7e7e9;
+  display: inline-block;
+
+  .positioner {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #eee;
+    z-index: 20;
+    overflow: auto;
+    max-height: 31rem;
+    top: 0;
+  }
+
+  .menuitem {
+    cursor: pointer;
+    padding: 0 1.6rem;
+    z-index: 100000;
+    height: 3rem;
+    line-height: 3rem;
+    @include ellipsis();
+    display: flex;
+    align-items: center;
+
+    &.hovered, &:hover {
+      background: #eee;
+    }
+
+    .badge, .pic {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      margin-right: .5rem;
+    }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pic {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

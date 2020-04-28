@@ -1,0 +1,794 @@
+{
+  "headers": {
+    "Authorization": "Bearer {{token}}",
+    "X-Kubric-Workspace-ID": "{{workspace_id}}",
+    "X-Kubric-Env": "{{__kubric_config__.env}}"
+  },
+  "host": "{{__kubric_config__.host}}",
+  "path": "/api/v1",
+  "resources": {
+    "assets": {
+      "path": "assets",
+      "services": {
+        "bulkUpdate": {
+          "method": "put",
+          "path": "update/bulk",
+          "type": "auto"
+        },
+        "saveVariant": {
+          "method": "patch",
+          "type": "auto"
+        },
+        "confirmUpload": {
+          "data": "{{data}}",
+          "method": "post",
+          "path": "confirmupload"
+        },
+        "delete": {
+          "data": "{{body}}",
+          "method": "post",
+          "path": "delete"
+        },
+        "deleteFolder": {
+          "method": "delete",
+          "path": "folder/{{id}}"
+        },
+        "deleteVariant": {
+          "method": "patch",
+          "type": "auto"
+        },
+        "download": {
+          "path": "folder/zip/{{id}}"
+        },
+        "get": {
+          "path": "search",
+          "query": {
+            "asset_attributes": "{{asset_attributes}}",
+            "attributes": "{{attributes}}",
+            "constraints": "{{constraints}}",
+            "exact_path": "{{exact_path}}",
+            "exclude": "{{exclude}}",
+            "from": "{{from}}",
+            "offer": "{{offer}}",
+            "path": "{{path}}",
+            "q": "{{q}}",
+            "size": "{{size}}",
+            "sort_by": "{{sort_by}}",
+            "type": "{{type}}",
+            "user_id": "{{userId}}",
+            "workspace_id": "{{workspace_id}}"
+          }
+        },
+        "getAsset": {
+          "path": "{{id}}",
+          "query": {
+            "user_id": "{{email}}"
+          }
+        },
+        "getFilters": {
+          "method": "get",
+          "path": "filter",
+          "type": "auto"
+        },
+        "getIntegrations": {
+          "method": "get",
+          "path": "integrations/__all__/credentials",
+          "type": "auto"
+        },
+        "getUploadUrls": {
+          "method": "post",
+          "path": "getuploadurls",
+          "type": "auto"
+        },
+        "ingest": {
+          "data": "{{sourceData}}",
+          "method": "post",
+          "path": "integrations/cloudinary/credentials"
+        },
+        "moveToFolder": {
+          "method": "put",
+          "path": "update/path/bulk",
+          "type": "auto"
+        },
+        "newFolder": {
+          "method": "post",
+          "path": "folder/newfolder",
+          "type": "auto"
+        },
+        "notifications": {
+          "data": "{{postData}}",
+          "headers": "{{headers}}",
+          "method": "post",
+          "path": "notifications",
+          "type": "auto"
+        },
+        "save": {
+          "method": "put",
+          "path": "update",
+          "type": "auto"
+        },
+        "saveFolder": {
+          "method": "put",
+          "path": "folder/{{id}}",
+          "type": "auto"
+        },
+        "shareAssets": {
+          "method": "patch",
+          "type": "auto"
+        },
+        "shareFolders": {
+          "method": "patch",
+          "path": "folder",
+          "type": "auto"
+        },
+        "unshareAssets": {
+          "method": "patch",
+          "type": "auto"
+        },
+        "unshareFolders": {
+          "method": "patch",
+          "path": "folder",
+          "type": "auto"
+        }
+      }
+    },
+    "notifications": {
+      "path": "notification",
+      "services": {
+        "get": {
+          "method": "get",
+          "query": {
+            "channel": "in-app"
+          },
+          "type": "auto"
+        },
+        "getConfig": {
+          "method": "get",
+          "path": "configs",
+          "type": "auto"
+        },
+        "getSubscriptions": {
+          "method": "get",
+          "path": "subscription",
+          "type": "auto"
+        },
+        "triggerSubscription": {
+          "method": "post",
+          "path": "subscription",
+          "type": "auto"
+        }
+      }
+    },
+    "authenticate": {
+      "services": {
+        "login": {
+          "data": {
+            "app_name": "{{appName}}",
+            "userid": "{{email}}"
+          },
+          "isFormData": true,
+          "method": "post",
+          "path": "authenticate"
+        },
+        "signup": {
+          "data": {
+            "app_name": "{{appName}}",
+            "email": "{{email}}",
+            "name": "{{name}}",
+            "profile_image_url": "{{photo}}",
+            "t": "{{token}}"
+          },
+          "isFormData": true,
+          "method": "post",
+          "path": "signup"
+        },
+        "verify": {
+          "path": "verify/{{token}}"
+        }
+      }
+    },
+    "campaign": {
+      "path": "campaign/{{campaign}}",
+      "services": {
+        "get": {
+          "query": {
+            "register_view": "{{registerView}}"
+          }
+        },
+        "getAd": {
+          "path": "ad/{{ad}}"
+        },
+        "getAds": {
+          "path": "ads",
+          "query": {
+            "aud_id": "{{aud_id}}",
+            "count": "{{count}}",
+            "limit": "{{limit}}",
+            "q": "{{q}}",
+            "qc_status": "{{qc_status}}",
+            "search": "{{search}}",
+            "start": "{{start}}",
+            "status": "{{status}}",
+            "workspace_id": "{{workspace_id}}",
+            "manual_copy_qc_status": "{{manual_copy_qc_status}}",
+            "manual_visual_qc_status": "{{manual_visual_qc_status}}",
+            "assigned_to": "{{assignedTo}}"
+          }
+        },
+        "getCount": {
+          "path": "ads/aggregate",
+          "query": {
+            "key": "status"
+          }
+        },
+        "getAssignees": {
+          "path": "ads/aggregate",
+          "query": {
+            "key": "assigned_to"
+          }
+        },
+        "preprocess": {
+          "data": {
+            "bindings": "{{bindings}}",
+            "data": "{{orgData}}"
+          },
+          "host": "{{__kubric_config__.apiHost}}",
+          "method": "post",
+          "path": "/api/v1/preprocess/campaign/{{campaign}}"
+        },
+        "saveAd": {
+          "data": {
+            "ad": {
+              "_mapping": "{{adData}}",
+              "_transformer": "[[json]]"
+            },
+            "manual_copy_qc_status": "{{manual_copy_qc_status}}",
+            "manual_visual_qc_status": "{{manual_visual_qc_status}}",
+            "mediaFormat": "{{mediaFormat}}",
+            "meta": {
+              "_mapping": "{{meta}}",
+              "_transformer": "[[json]]"
+            },
+            "qc_results": {
+              "_mapping": "{{qcResults}}",
+              "_transformer": "[[json]]"
+            },
+            "qc_score": "{{qcScore}}",
+            "qc_status": "{{qcStatus}}",
+            "assigned_to": "{{assigned_to}}",
+            "source": {
+              "_mapping": "{{source}}",
+              "_transformer": "[[json]]"
+            },
+            "status": "{{status}}",
+            "tasks": {
+              "_mapping": "{{tasks}}",
+              "_transformer": "[[json]]"
+            },
+            "storyboard_id": "{{storyboardId}}",
+            "storyboard_version": "{{storyboardVersion}}"
+          },
+          "isURLEncoded": true,
+          "method": "post",
+          "path": "ad/{{id}}"
+        }
+      }
+    },
+    "campaignAd": {
+      "path": "campaign/{{campaign}}/ad/{{ad}}"
+    },
+    "campaigns": {
+      "path": "campaigns",
+      "services": {
+        "get": {
+          "method": "get",
+          "query": {
+            "limit": "{{limit}}",
+            "search": "{{search}}",
+            "start": "{{start}}",
+            "status": "{{status}}",
+            "workspace_id": "{{workspace_id}}"
+          }
+        },
+        "save": {
+          "data": {
+            "allAudiences": "{{allAudiences}}",
+            "audiences": "{{audiences}}",
+            "campaign_id": "{{campaignId}}",
+            "mediaFormat": "{{mediaFormat}}",
+            "name": "{{name}}",
+            "publishData": {
+              "_mapping": "{{publishData}}",
+              "_transformer": "[[json]]"
+            },
+            "status": "{{status}}",
+            "tasks": {
+              "_mapping": "{{tasks}}",
+              "_transformer": "[[json]]"
+            },
+            "storyboard_ids": "{{storyboardIds}}",
+            "storyboard_versions": "{{storyboardVersions}}",
+            "bindings": {
+              "_mapping": "{{bindings}}",
+              "_transformer": "[[json]]"
+            },
+            "workspace_id": "{{workspace_id}}"
+          },
+          "isURLEncoded": true,
+          "method": "post"
+        },
+        "share": {
+          "method": "patch",
+          "type": "auto"
+        }
+      }
+    },
+    "cloudinary": {
+      "path": "assets/integrations/cloudinary",
+      "services": {
+        "disconnect": {
+          "method": "delete",
+          "path": "credentials",
+          "type": "auto"
+        },
+        "getAssets": {
+          "host": "https://{{api_key}}:{{api_secret}}@api.cloudinary.com/v1_1/{{cloud_name}}/folders",
+          "method": "get",
+          "type": "auto"
+        },
+        "syncCloudinary": {
+          "method": "post",
+          "path": "/api/v1/assets/cloudinary/sync",
+          "type": "auto"
+        },
+        "validateCloudinary": {
+          "host": "https://{{api_key}}:{{api_secret}}@api.cloudinary.com/v1_1/{{cloud_name}}/resources",
+          "method": "get",
+          "path": "/"
+        }
+      }
+    },
+    "collage": {
+      "host": "{{__kubric_config__.apiHost}}",
+      "path": "collage",
+      "services": {
+        "generate": {
+          "data": {
+            "parameters": "{{parameters}}",
+            "templates": "{{templates}}"
+          },
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "method": "post",
+          "path": "generate/id"
+        },
+        "getTaskStatus": {
+          "path": "task/{{taskId}}"
+        }
+      }
+    },
+    "drive": {
+      "path": "assets/integrations/drive",
+      "services": {
+        "callback": {
+          "data": {
+            "redirect_uri": "{{redirect}}",
+            "url": "{{url}}"
+          },
+          "method": "post",
+          "path": "callback"
+        },
+        "disconnect": {
+          "method": "delete",
+          "path": "credentials"
+        },
+        "getCredentials": {
+          "path": "credentials"
+        },
+        "getFolders": {
+          "path": "folders",
+          "query": {
+            "workspace_id": "{{workspace_id}}"
+          }
+        },
+        "getOAuthUrl": {
+          "path": "authorize",
+          "query": {
+            "redirect_uri": "{{redirect}}"
+          }
+        },
+        "updateFolders": {
+          "data": {
+            "folders": "{{folders}}",
+            "workspace_id": "{{workspace_id}}"
+          },
+          "method": "post",
+          "path": "folders"
+        }
+      }
+    },
+    "effects": {
+      "host": "{{__kubric_config__.apiHost}}",
+      "services": {
+        "getTaskStatus": {
+          "path": "collage/task/{{taskId}}"
+        },
+        "resolve": {
+          "data": "{{object}}",
+          "method": "post",
+          "path": "effect"
+        }
+      }
+    },
+    "events": {
+      "host": "{{__kubric_config__.apiHost}}",
+      "path": "event",
+      "services": {
+        "postEvent": {
+          "method": "post",
+          "data": "{{eventData}}",
+          "query": {
+            "beta": "{{beta}}"
+          }
+        }
+      }
+    },
+    "insights": {
+      "path": "insights/facebook/{{ad}}",
+      "query": {
+        "date_preset": "lifetime",
+        "fb_entities": "{{entities}}",
+        "fields": "ad_id,impressions,clicks"
+      }
+    },
+    "profile": {
+      "path": "profile/{{email}}",
+      "services": {
+        "get": {
+          "query": {
+            "t": "{{token}}"
+          }
+        },
+        "update": {
+          "data": {
+            "age": "{{age}}",
+            "company_profile": "{{company_profile}}",
+            "desc": "{{desc}}",
+            "email": "{{email}}",
+            "gender": "{{gender}}",
+            "name": "{{name}}",
+            "phone_no": "{{phone_no}}",
+            "profile_image_url": "{{profile_image_url}}",
+            "t": "{{token}}"
+          },
+          "isFormData": true,
+          "method": "put"
+        }
+      }
+    },
+    "publisher": {
+      "host": "{{__kubric_config__.root}}",
+      "path": "/api/publish/ads?channel={{channel}}",
+      "services": {
+        "postAd": {
+          "data": {
+            "account": "{{accountId}}",
+            "ad": "{{ad}}",
+            "adset": "{{adsetId}}",
+            "campaign": "{{campaignId}}",
+            "name": "{{adName}}",
+            "page": "{{pageId}}",
+            "video": "{{video}}"
+          },
+          "headers": {
+            "Cookie": "{{__kubric_config__.cookie}}={{uid}}"
+          },
+          "method": "post"
+        }
+      }
+    },
+    "qc": {
+      "host": "{{__kubric_config__.apiHost}}",
+      "path": "quality-check",
+      "services": {
+        "getTaskStatus": {
+          "path": "/api/v1/collage/task/{{taskId}}"
+        },
+        "sheetVerification": {
+          "data": "{{data}}",
+          "method": "post",
+          "path": "/api/v1/verification"
+        },
+        "shotsQC": {
+          "data": {
+            "assets": "{{assets}}",
+            "frames": "{{frames}}",
+            "segment": "{{segment}}",
+            "storyboard": "{{storyboard}}"
+          },
+          "method": "post"
+        }
+      }
+    },
+    "roles": {
+      "path": "roles",
+      "services": {
+        "get": {
+          "method": "get",
+          "type": "auto"
+        }
+      }
+    },
+    "settings": {
+      "path": "settings"
+    },
+    "shutterstock": {
+      "path": "assets/integrations/shutterstock",
+      "services": {
+        "callback": {
+          "data": {
+            "redirect_uri": "{{redirect}}",
+            "url": "{{url}}"
+          },
+          "method": "post",
+          "path": "callback"
+        },
+        "disconnect": {
+          "method": "delete",
+          "path": "credentials"
+        },
+        "getAssets": {
+          "host": "https://api.shutterstock.com",
+          "method": "get",
+          "path": "/v2/images/search",
+          "query": {
+            "color": "{{color}}",
+            "orientation": "{{orientation}}",
+            "page": "{{page}}",
+            "per_page": "{{size}}",
+            "query": "{{q}}",
+            "sort": "{{sort_by}}"
+          },
+          "type": "auto"
+        },
+        "getCredentials": {
+          "method": "get",
+          "path": "credentials",
+          "type": "auto"
+        },
+        "getOAuthUrl": {
+          "path": "authorize",
+          "query": {
+            "redirect_uri": "{{redirect}}"
+          }
+        },
+        "getSubscriptions": {
+          "method": "get",
+          "path": "list-subscriptions",
+          "query": {
+            "user_id": "{{user_id}}"
+          }
+        },
+        "licenseAsset": {
+          "data": {
+            "asset_id": "{{asset_id}}",
+            "asset_type": "{{asset_type}}",
+            "subscription_id": "{{subscription_id}}"
+          },
+          "method": "post",
+          "path": "license-asset"
+        },
+        "updateFolders": {
+          "updateFolders": {
+            "method": "post",
+            "path": "folders"
+          }
+        }
+      }
+    },
+    "suggest": {
+      "host": "{{__kubric_config__.apiHost}}",
+      "path": "suggest",
+      "services": {
+        "getSuggestions": {
+          "method": "post",
+          "data": "{{data}}"
+        }
+      }
+    },
+    "storyboard": {
+      "path": "video/storyboard/{{storyboard}}/{{version}}"
+    },
+    "storyboards": {
+      "path": "video/storyboards",
+      "services": {
+        "get": {
+          "query": {
+            "content_type": "{{content_type}}",
+            "limit": "{{limit}}",
+            "public": 1,
+            "search": "{{search}}",
+            "start": "{{start}}",
+            "status": 1,
+            "preview": true
+          }
+        },
+        "getBulk": {
+          "path": "bulk",
+          "query": {
+            "ids": "{{ids}}"
+          }
+        },
+        "share": {
+          "method": "patch",
+          "type": "auto"
+        }
+      }
+    },
+    "team": {
+      "path": "team",
+      "services": {
+        "create": {
+          "method": "post",
+          "type": "auto"
+        },
+        "delete": {
+          "method": "delete",
+          "path": "{{id}}"
+        },
+        "getInvitations": {
+          "method": "get",
+          "path": "{{teamId}}/invite",
+          "type": "auto"
+        },
+        "getTeam": {
+          "method": "get"
+        },
+        "getTeamsOfUser": {
+          "method": "get",
+          "path": "user/{{workspaceId}}"
+        },
+        "update": {
+          "method": "put",
+          "type": "auto"
+        },
+        "updateUsers": {
+          "data": "{{body}}",
+          "method": "patch",
+          "path": "user"
+        }
+      }
+    },
+    "templates": {
+      "path": "video/template/{{templateId}}",
+      "services": {
+        "copy": {
+          "data": {
+            "name": "{{name}}"
+          },
+          "isURLEncoded": true,
+          "method": "post",
+          "path": "copy"
+        },
+        "remove": {
+          "method": "delete"
+        },
+        "save": {
+          "data": {
+            "bindings": {
+              "_mapping": "{{bindings}}",
+              "_transformer": "[[json]]"
+            },
+            "name": "{{name}}",
+            "storyboard": "{{storyboard}}",
+            "template_id": "{{id}}"
+          },
+          "isURLEncoded": true,
+          "method": "post"
+        }
+      }
+    },
+    "transform": {
+      "host": "https://accio-assets-dot-raydio-test.appspot.com",
+      "path": "/v1/transform/{{assetId}}",
+      "services": {
+        "filter": {
+          "method": "get",
+          "path": "{{filter}}",
+          "query": {
+            "format": "json"
+          },
+          "type": "auto"
+        },
+        "transform": {
+          "method": "get",
+          "path": "{{transformations}}",
+          "query": {
+            "format": "json"
+          },
+          "type": "auto"
+        }
+      }
+    },
+    "video": {
+      "path": "/api/v1/video",
+      "services": {
+        "generate": {
+          "host": "http://api.kubric.io",
+          "method": "post",
+          "path": "/api/v2/video/{{video}}",
+          "query": {
+            "email": "{{email}}",
+            "env": "{{env}}"
+          },
+          "type": "auto"
+        },
+        "get": {
+          "path": "video/{{video}}"
+        },
+        "getCollage": {
+          "path": "collage/{{collageId}}"
+        }
+      }
+    },
+    "workspace": {
+      "path": "workspace",
+      "services": {
+        "create": {
+          "method": "post",
+          "storeKey": "CREATE_WORKSPACE",
+          "type": "auto"
+        },
+        "delete": {
+          "method": "delete",
+          "path": "{{workspaceId}}",
+          "storeKey": "DELETE_WORKSPACE"
+        },
+        "get": {
+          "method": "get",
+          "path": "{{workspaceId}}",
+          "storeKey": "FETCH_WORKSPACE",
+          "type": "auto",
+          "query": {
+            "fetch_roles": "{{fetchRoles}}",
+            "user_info": "{{userInfo}}"
+          }
+        },
+        "getInvitations": {
+          "method": "get",
+          "path": "{{workspaceId}}/invite",
+          "type": "auto"
+        },
+        "getWorkspacesOfUser": {
+          "method": "get",
+          "storeKey": "WORKSPACES_FETCHED",
+          "type": "auto"
+        },
+        "revokeInvitation": {
+          "method": "delete",
+          "path": "invite/{{token_id}}",
+          "type": "auto"
+        },
+        "set": {
+          "data": {
+            "workspace_id": "{{workspace_id}}"
+          },
+          "method": "post",
+          "path": "set",
+          "type": "auto"
+        },
+        "update": {
+          "method": "put",
+          "storeKey": "UPDATE_WORKSPACE",
+          "type": "auto"
+        },
+        "updateUsers": {
+          "data": "{{body}}",
+          "method": "patch",
+          "storeKey": "UPDATE_USERS"
+        }
+      }
+    }
+  }
+}

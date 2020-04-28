@@ -1,0 +1,12 @@
+<svg viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="58" height="58" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="desktop_login" stroke="none" stroke-width="1" fill="#E43B5A" fill-rule="evenodd">
+        <ellipse id="path-1" cx="29" cy="29" rx="29" ry="29"></ellipse>
+        <use id="Oval" stroke="#E43B5A" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+        <path d="M25.9021366,40.6188677 C24.8516156,41.4218181 24,41.0028822 24,39.6722912 L24,21.3294116 C24,20.0036814 24.8573601,19.5842754 25.9021366,20.3828351 L37.2376663,29.0469811 C38.2881873,29.8499315 38.2824429,31.156162 37.2376663,31.9547217 L25.9021366,40.6188677 Z" id="Triangle-1" fill="white"></path>
+    </g>
+</svg>

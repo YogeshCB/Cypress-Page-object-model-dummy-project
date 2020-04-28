@@ -1,0 +1,43 @@
+@import "./defines";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+.creativetabs {
+  position: absolute;
+  top: $header-height + (2 * $header-padding);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.empty {
+  @include centralize();
+  position: absolute;
+  top: $desktop-header-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .text {
+    width: 40%;
+    margin-bottom: 3rem;
+  }
+
+  .message {
+    font-size: 2.5rem;
+    color: gray;
+  }
+
+  .button {
+    width: 14rem;
+    margin-top: 2rem;
+  }
+
+  .icon {
+    background-image: url("../../../icons/emptycreatives.svg");
+    height: 38rem;
+    width: 48rem;
+    background-repeat: no-repeat;
+    margin-right: 10rem;
+  }
+}

@@ -1,0 +1,77 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../defines";
+
+$card-padding: 1.5rem;
+$heading-size: 2.2rem;
+
+.expandable {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  max-height: $heading-size + (2 * $card-padding);
+  margin: 1rem 0;
+
+  &:hover {
+    border-color: $primary-color;
+
+    .heading {
+      color: $secondary-text;
+    }
+  }
+
+  &.expanded {
+    border-color: $primary-color;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+
+    .heading {
+      color: black;
+    }
+
+    .icon {
+      color: $secondary-text;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  padding: $card-padding;
+  cursor: pointer;
+  user-select: none;
+
+  .heading {
+    font-size: $heading-size;
+    line-height: $heading-size;
+    padding-bottom: $card-padding;
+    color: $border-color;
+  }
+
+  .attributes {
+    font-size: 1.2rem;
+  }
+
+  .label {
+    color: $secondary-text;
+  }
+
+  .attribute {
+    padding: .5rem 0;
+  }
+
+  .icon {
+    position: absolute;
+    top: $card-padding;
+    right: $card-padding;
+    color: $border-color;
+    text-align: center;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+
+    &:hover {
+      background: $primary-color10;
+      color: $primary-color;
+      border-radius: 50%;
+    }
+  }
+}

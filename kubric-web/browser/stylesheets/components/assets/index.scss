@@ -1,0 +1,64 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "../../defines";
+
+$scroller-height: 40rem;
+$assets-theme-color: $primary-color;
+$asset-image-size: 15rem;
+$done-margin: 2rem;
+$field-margin-bottom: 1rem;
+$field-margin-height: 3rem;
+
+.assets {
+  .imageTextOverlay {
+    font-size: 1rem;
+    top: auto;
+    left: auto;
+    padding: .5rem;
+  }
+}
+
+.imageContainer {
+  width: $asset-image-size;
+  height: $asset-image-size;
+}
+
+.modalContent {
+  width: 52rem;
+  overflow-y: scroll;
+}
+
+.scroller {
+  height: $scroller-height;
+}
+
+.filterContainer {
+  padding-left: 0rem !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+  margin-bottom: 5px !important;
+}
+
+.doneButton {
+  float: right;
+  margin-top: $done-margin;
+}
+
+.uploadButton {
+  text-align: center;
+  color: $assets-theme-color;
+  cursor: pointer;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progressBar {
+  width: 92%;
+}
+
+.field {
+  margin-bottom: $field-margin-bottom;
+  height: $field-margin-height;
+}

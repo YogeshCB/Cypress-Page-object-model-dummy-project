@@ -1,0 +1,22 @@
+$frame-height: 25rem;
+$frame-width: 20rem;
+
+.uploader {
+  padding: 0;
+  border: 0;
+  height: $frame-height;
+  width: $frame-width;
+}
+
+.object {
+  position: absolute;
+}
+
+.text {
+  outline: none;
+  color: white;
+}
+
+.keyframe {
+  position: relative;
+}

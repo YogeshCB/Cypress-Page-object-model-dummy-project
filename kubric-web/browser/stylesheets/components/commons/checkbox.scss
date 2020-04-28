@@ -1,0 +1,54 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "../../defines";
+
+.checkbox {
+  $size: 1.8rem;
+  position: relative;
+
+  .new {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #dee7f0;
+    border-radius: 2px;
+    height: $size;
+    width: $size;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
+    margin-right: 5px;
+
+    &.partial {
+      opacity: .6;
+    }
+  }
+
+  &.checked .new {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    position: relative;
+
+    .check {
+      position: absolute;
+      top: -.1rem;
+      left: .35rem;
+      width: .7rem;
+      height: 1.2rem;
+      content: "";
+      border-color: white;
+      border-style: solid;
+      border-top: 0;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      border-left: 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+  }
+}

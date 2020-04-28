@@ -1,0 +1,14 @@
+@import './defines';
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.panel {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: $desktop-header-height;
+  width: 100 - $section-width;
+  background: white;
+  border: 1px solid $border-color;
+  overflow: auto;
+}

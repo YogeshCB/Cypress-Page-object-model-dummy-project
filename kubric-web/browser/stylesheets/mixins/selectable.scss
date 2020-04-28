@@ -1,0 +1,14 @@
+@import "../defines";
+
+.selectable {
+  border-style: solid;
+  border-color: white;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .2s;
+  transition-property: border;
+  cursor: pointer;
+
+  &.selected {
+    border-color: $primary-color !important;
+  }
+}

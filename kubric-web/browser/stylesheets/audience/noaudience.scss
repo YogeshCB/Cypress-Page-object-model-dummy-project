@@ -1,0 +1,11 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.dropzone {
+  min-height: 100%;
+  border: .5rem dashed transparent;
+  border-radius: 5px;
+  padding: 2rem;
+  &.dragover {
+    border-color: $border-color;
+  }
+}

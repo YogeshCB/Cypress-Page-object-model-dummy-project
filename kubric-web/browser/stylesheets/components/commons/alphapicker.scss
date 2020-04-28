@@ -1,0 +1,110 @@
+.container {
+	height: 15px;
+	input[type="range"] {
+		height: 15px;
+		-webkit-appearance: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+	}
+	input[type="range"]:focus {
+		outline: none;
+	}
+	input[type="range"]::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 15px;
+		cursor: pointer;
+		box-shadow: 0px 0px 0px #000000;
+		background: transparent;
+		border-radius: 0px;
+	}
+	input[type="range"]::-webkit-slider-thumb {
+		box-shadow: 0px 0px 1px #000000;
+		height: 15px;
+		width: 15px;
+		border-radius: 23px;
+		background: #ffffff;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: 0px;
+	}
+	input[type="range"]:focus::-webkit-slider-runnable-track {
+		background: transparent;
+	}
+	input[type="range"]::-moz-range-track {
+		width: 100%;
+		height: 15px;
+		cursor: pointer;
+		box-shadow: 0px 0px 0px #000000;
+		background: transparent;
+		border-radius: 0px;
+	}
+	input[type="range"]::-moz-range-thumb {
+		box-shadow: 0px 0px 1px #000000;
+		height: 15px;
+		width: 15px;
+		border-radius: 23px;
+		background: #ffffff;
+		cursor: pointer;
+	}
+	input[type="range"]::-ms-track {
+		width: 100%;
+		height: 15px;
+		cursor: pointer;
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+	}
+	input[type="range"]::-ms-fill-lower {
+		background: transparent;
+		border: 0px solid #000000;
+		border-radius: 0px;
+		box-shadow: 0px 0px 0px #000000;
+	}
+	input[type="range"]::-ms-fill-upper {
+		background: transparent;
+		border: 0px solid #000000;
+		border-radius: 0px;
+		box-shadow: 0px 0px 0px #000000;
+	}
+	input[type="range"]::-ms-thumb {
+		margin-top: 1px;
+		box-shadow: 0px 0px 1px #000000;
+		border: 0px solid #000000;
+		height: 15px;
+		width: 15px;
+		border-radius: 23px;
+		background: #ffffff;
+		cursor: pointer;
+	}
+}
+
+.overlaySlider {
+	position: absolute;
+}
+
+.gradient {
+	position: absolute;
+	height: 15px;
+	width: calc(100% - 15px);
+	margin: 0 10px;
+}
+
+.checkboxBackground {
+	margin: 0 10px;
+	position: absolute;
+	height: 15px;
+	width: calc(100% - 15px);
+	background: url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQoU2Nsamr6z4AG6urqGNHFGIeCQnRHg/jY3I3hu0GoEADUdyCkEnXKNAAAAABJRU5ErkJggg==
+    )
+		repeat;
+}
+
+.slider {
+	height: 1rem;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+}

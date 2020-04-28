@@ -1,0 +1,63 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  $padding: 1rem;
+  position: relative;
+  padding-top: 1rem;
+  background: $black_30;
+  color: white;
+  display: inline-block;
+  .header {
+    position: absolute;
+    top: $padding;
+    left: $padding;
+    right: $padding;
+  }
+
+  .iconContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include centralize();
+  }
+  .nameFont {
+    font-size: 16px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .tags {
+    font-size: 1.2rem;
+  }
+
+  .iconListen {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .iconPlaying {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1.2rem;
+    right: 0;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 8px;
+    border-top-left-radius: 8px;
+    z-index: 100;
+  }
+  .card {
+    position: absolute;
+  }
+}

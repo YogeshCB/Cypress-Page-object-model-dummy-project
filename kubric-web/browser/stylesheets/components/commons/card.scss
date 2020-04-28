@@ -1,0 +1,92 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "../../defines";
+
+.card {
+  background: white;
+  position: relative;
+
+  .cover {
+    @include image-bg();
+  }
+
+  .name {
+    font-weight: 500;
+    @include centralize-vertical();
+  }
+
+  .desc {
+    overflow: hidden;
+    white-space: normal;
+  }
+
+  .progress {
+    position: absolute;
+    bottom: .5rem;
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+}
+
+@media #{$small-only} {
+  $border-radius: .5rem;
+  $image-size: 30vw;
+  $name-height: 20%;
+  .card {
+    display: flex;
+    border-radius: $border-radius;
+
+    .cover {
+      height: $image-size;
+      width: $image-size;
+      border-bottom-left-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+
+    .details {
+      width: 100 - $image-size;
+      height: $image-size;
+      padding: .5rem 1rem;
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      border: 1px solid $border-color;
+    }
+
+    .name {
+      height: $name-height;
+    }
+
+    .desc {
+      height: 100 - $name-height;
+      font-size: 1.2rem;
+      color: $secondary-text;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .card {
+    @include boxShadow();
+
+    .cover {
+      padding-top: 56%;
+      width: 100%;
+    }
+
+    .details {
+      border: 2rem solid transparent;
+      border-top-width: 0;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .name {
+      height: 4rem;
+    }
+
+    .desc {
+      max-height: 12rem;
+    }
+  }
+}

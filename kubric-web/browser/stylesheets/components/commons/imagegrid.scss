@@ -1,0 +1,39 @@
+.grid {
+	padding: 2rem;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: repeat(auto-fill, 250px);
+}
+
+.imageContainer {
+	height: calc(250px - 20px);
+	width: calc(100% - 20px);
+	background: url(https://console.cloudinary.com/console/v365/0335ac7da0d4512e5628665422439c51.png);
+	margin: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.selectedOverlay {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(41, 20, 107, 0.44);
+	cursor: pointer;
+}
+
+.tick {
+	color: #fff;
+	font-size: 4rem;
+}

@@ -1,0 +1,255 @@
+@import "../../content/defines";
+$kubric-purple-hover: rgba(41, 20, 107, 0.7);
+$kubric-purple: #29146b;
+
+.contractNav {
+  width: 75%;
+  flex-wrap: wrap;
+}
+.path {
+  padding: 0rem 2rem 0rem 2rem;  
+  display: flex;
+  align-content: center;
+  background: #fff;
+  line-height: 47px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */                                                      
+  .span, .action {
+    cursor: pointer;
+    font-size: 14px;  
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $kubric-purple-hover;
+    }
+  }
+  .action {
+    font-weight: 700;
+    color: #29146b;   
+    align-content: center;
+    margin: 0 10px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    &:hover {
+      background: #f4f6f8;
+      border-radius: 8px;
+      color: #29146b;   
+    }
+  }
+  .separator {
+    background: rgb(230, 237, 244);
+    transform: rotate(15deg);
+    width: 1px;
+    height: 30px;
+    margin: 0 7px;
+    position: relative;
+    vertical-align: middle;
+    align-items: center;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.filterToggle{
+  margin-right: 2rem;
+  position: relative;  
+  font-weight: 400 !important;
+  padding: 0 10px;
+}
+.filterToggleActive {
+  margin-right: 2rem;
+  position: relative;  
+  font-weight: 400 !important;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: #F8F6FE;
+}
+.filterIcon {
+  width: 1.7rem;
+  height: 1.7rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.poolText {
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+}
+.border {
+  border: 2px solid #525252 !important;
+}
+.actionContainerNewLine {
+  display: flex;
+  width: 100%;  
+}
+.actionContainer, .actions {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.actionNewLine {
+  display: flex;
+  height: 46px;
+  line-height: 46px;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actionIcons {
+  width: 1.4rem;
+  height: 1.7rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.actionIconsGrid {
+  width: 1.6rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+.borderChecked {
+  border-color: #412d7b !important;
+  background-color: #412d7b !important;
+}
+
+.selected {
+  -webkit-transform: rotate(-45deg) !important;
+  transform: rotate(-45deg) !important;
+  border: solid #3a407c;
+  margin-top: 3px;
+}
+
+.menu {    
+  right: 3rem;
+  top: 12.5rem;
+  z-index: 21 !important;
+}
+.menuContract {
+  right: 53%;
+  top: 11.5rem;
+}
+
+.menuItem {
+  padding: 4px 5px;
+  cursor: pointer;
+  &:hover {
+    background: #f4f6f8;
+  }
+}
+.spinner {
+  width: 2rem;
+}
+.label {
+  padding: 0 0.5rem !important;
+}
+.triangle {
+  border: solid #29146b;
+  border-width: 0 1px 1px 0;
+  content: "";
+  display: inline-block;
+  height: 7px;
+  margin-top: -6px;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 7px;
+}
+.purple {
+  color: #29146b !important;
+  font-weight: 700 !important;
+}
+.delete {
+  color: #575755 !important;
+}
+.searchHeadline {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(0,0,0,0.8);
+}
+.container {
+  margin-left: 2rem;
+}
+.sortBy{
+  color: rgba(0,0,0,0.8);
+  cursor: pointer;
+  margin-left: auto !important;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  align-self: center;
+  padding: 4px 10px;
+  padding-right: 25px;
+}
+.selectedSort {
+  color: rgba(0,0,0,0.8);
+  cursor: pointer !important;
+  font-size: 14px;
+}
+.sortByValue {
+  color: #525252;
+  cursor: pointer !important;
+}
+.selectSort {
+  color: rgba(0,0,0,0.8);
+  cursor: pointer !important;
+}
+.message {
+  padding: 0 2rem;
+}
+.pathName {
+  max-width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.select {
+  cursor: pointer !important;
+  margin: 0 1rem;
+  position: relative;  
+
+  &:hover {
+    color: #0070E0 !important;
+  }
+}
+
+.header {
+  cursor: default;
+
+  &:hover {
+    background: #fff !important;
+  }
+}
+
+.header h5 {
+  cursor: default;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+
+.size {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}

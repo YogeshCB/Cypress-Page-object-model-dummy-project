@@ -1,0 +1,108 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import './defines';
+
+.campaign {
+  display: flex;
+  justify-content: center;
+  width: 71%;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  .languageField {
+    margin: 1rem 0;
+    > textarea {
+      height: 5rem;
+    }
+  }
+  .icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    &.btndisabled {
+      visibility: hidden;
+    }
+  }
+  .content {
+    width: $section-width;
+  }
+  .assetField {
+    padding: .5rem 0;
+  }
+  .addAssets {
+    height: 9rem;
+    width: 9rem;
+    border: 1px solid $border-color;
+    color: $gray_89;
+    font-size: 1.6rem;
+    line-height: 9rem;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+  .imageContainer {
+    cursor: pointer;
+    &:hover {
+      opacity: .9;
+    }
+  }
+  .assetsPanel {
+    margin: 1rem 0 2rem 0;
+  }
+  .filters {
+    border: 1px solid $border-color;
+    border-right: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: $section-width;
+  }
+  .filter {
+    width: 33%;
+  }
+  .headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header {
+      padding: 2rem 0;
+      width: 35rem;
+      text-align: center;
+    }
+    .heading {
+      font-size: 1.8rem;
+    }
+    .count {
+      color: $secondary-text;
+    }
+  }
+  .canvasContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .canvas {
+    width: 90rem;
+  }
+  .modalContent {
+    width: 50%;
+    max-width: 45rem;
+  }
+  .modalheading {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $secondary-text;;
+  }
+  .modalButtons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

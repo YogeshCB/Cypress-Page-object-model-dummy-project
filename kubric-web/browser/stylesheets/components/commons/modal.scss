@@ -1,0 +1,23 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+.modalLayer {
+  position: fixed !important;
+  z-index: 100000000 !important;
+
+  &.transparent {
+    background: transparent;
+  }
+
+  .content {
+    @include boxShadow();
+    background: white;
+    padding: $modal-padding;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    border-radius: .5rem;
+    position: absolute;
+    overflow: auto;
+  }
+}

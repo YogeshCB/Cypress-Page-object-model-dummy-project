@@ -1,0 +1,61 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+$drop-border-width: 1px;
+
+.audiences {
+  height: 100%;
+  position: relative;
+
+  .actions {
+    background: white;
+    height: 0;
+
+    .deleteButton {
+      position: absolute;
+      z-index: 10;
+      right: 2rem;
+      top: 0.94rem;
+    }
+  }
+
+  .gridContainer {
+    height: 80vh;
+    padding: 2rem;
+    margin-left: -6px;
+    margin-top: 15px;
+  }
+
+  .filterContainer {
+    border-radius: 6px;
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .openIcon {
+    font-size: 2rem;
+    color: $secondary-text;
+    cursor: pointer;
+
+    :hover {
+      opacity: .8;
+    }
+  }
+
+  .columnId {
+    width: 15rem;
+  }
+
+  .columnName {
+    width: 25rem;
+  }
+
+  .columnFB {
+    width: 15rem;
+  }
+
+  .columnAttributes {
+    width: 10rem;
+    text-align: center !important;
+  }
+}

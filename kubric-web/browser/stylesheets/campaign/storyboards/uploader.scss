@@ -1,0 +1,90 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.progressContainer, .container, .uploadContainer {
+  margin: 1rem auto;
+  width: 95% !important;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.err {
+  padding: 2rem 0;
+}
+
+.dragover {
+  background: rgba(255, 51, 131, 0.2);
+  color: #333;
+}
+
+.progressContainer {
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.barContainer {
+  height: .6rem !important;
+}
+
+.bar {
+  height: .6rem !important;
+}
+
+.percent {
+  margin-top: .3rem;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.uploadContainer {
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: $border-color;
+  font-size: 1.5rem;
+  border: 2px dashed $gray_e6;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100% !important;
+  margin: 0;
+}
+
+.uploader {
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.modalContent {
+  width: 40%;
+}
+
+.notification {
+  padding: 2rem 0;
+  color: gray;
+}
+
+.link {
+  margin: 2rem 0 1rem 0;
+  color: $kubric-violet;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}

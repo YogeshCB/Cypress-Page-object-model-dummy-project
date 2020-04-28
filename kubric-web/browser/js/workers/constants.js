@@ -1,0 +1,7 @@
+export class WorkerConstants {
+	static DISPATCH_ACTION = "DISPATCH_ACTION";
+	static WORKER_START = "WORKER_START";
+	static WORKER_STARTED = "WORKER_STARTED";
+	static WORKER_STARTED = "WORKER_STARTED";
+	static WORKER_ERROR = "WORKER_ERROR";
+}

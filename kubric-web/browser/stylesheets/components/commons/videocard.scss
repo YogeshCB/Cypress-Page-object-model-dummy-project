@@ -1,0 +1,24 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+$border-radius: 4px;
+
+.videocard {
+  border-radius: $border-radius;
+  background: white;
+  border: 1px solid $border-color;
+  .videoContainer {
+    margin: 0;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    video {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+  .details {
+    color: $gray_76;
+    padding: .7rem 1rem;
+    font-size: 1.4rem;
+  }
+}

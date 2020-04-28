@@ -1,0 +1,48 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+.container{
+  padding: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 15;
+  .item {    
+        width: 100%;
+        padding: 6px 16px;
+        font-size: 15px;
+        align-items: center;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: left;
+        color: inherit;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+            background: #f7f9fa;
+        }
+   }
+}
+.deleteIcon {
+    color: #575757 !important;
+}
+.icons{
+    font-size: 14px;
+    margin-right: 10px;    
+    color: #29136b;
+}
+.sharerContainer {
+        right: 0rem !important;
+        top: 3.4rem !important;
+}
+.containerTile {    
+    right: 0rem;
+    top: 3.4rem;
+}
+.containerList{
+   right: 2rem;
+   top: 9.5rem;
+}

@@ -1,0 +1,28 @@
+$drop-border-width: 2px;
+
+.filterField{
+    position: relative;
+    display: flex;
+}
+
+.searchField {
+    top: 0;
+    position: absolute;
+    left: 20%;
+    right: 0;
+    border: $drop-border-width dashed transparent;
+    border-top: 0;
+    border-bottom: 0;
+    .searchIcon {
+        position: absolute;
+        font-size: 2rem;
+        line-height: 2rem;
+        top: 1.5rem;
+        left: 2rem;
+        color: gray;
+    }
+}
+
+.selectbox {
+    width: 20% !important;
+}

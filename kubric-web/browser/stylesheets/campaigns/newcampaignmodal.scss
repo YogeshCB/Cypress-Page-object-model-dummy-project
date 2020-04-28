@@ -1,0 +1,38 @@
+.modalContent {
+  padding: 0 3rem 2rem 3rem !important;
+  width: 40%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.engine {
+  height: 70%;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.container {
+  height: 350px;
+}
+
+.field {
+  width: 80%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  padding-top: 0 !important;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

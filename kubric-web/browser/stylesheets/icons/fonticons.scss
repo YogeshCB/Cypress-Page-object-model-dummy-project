@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'appicons';
+  src: url('~fonts/appicons.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin fonticon() {
+  display: inline-block;
+  font-family: 'appicons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+[class*='fonticon']:before {
+  @include fonticon();
+}
+
+.fonticonAssets:before {
+  content: '\e800';
+}
+
+.fonticonAudience:before {
+  content: '\e801';
+}
+
+.fonticonCampaigns:before {
+  content: '\e802';
+}
+
+.fonticonInsights:before {
+  content: '\e803';
+}
+
+.fonticonStoryboards:before {
+  content: '\e804';
+}
+
+.fonticonTasks:before {
+  content: '\e805';
+}
+
+.fonticonEdit:before {
+  content: '\e806';
+}
+
+.fonticonOpen:before {
+  content: '\e807';
+}
+
+.fonticonNext:before {
+  content: '\e808';
+}
+
+.fonticonPrevious:before {
+  content: '\e809';
+}
+
+.fonticonShuffle:before {
+  content: '\e80A';
+}
+
+.fonticonDownload:before {
+  content: '\e80B';
+}
+
+.fonticonSearch:before {
+  content: '\e80C';
+}
+
+.fonticonClose:before {
+  content: '\e80D';
+}
+
+.fonticonCheck:before {
+  content: '\e80E';
+}
+
+.fonticonError:before {
+  content: '\e80F';
+}
+
+.fonticonWarning:before {
+  content: '\e810';
+}
+
+.fonticonAdd:before {
+  content: '\e811';
+}
+
+.fonticonListen:before {
+  content: '\e812';
+}
+
+.fonticonComment:before {
+  content: '\e813';
+}
+
+.fonticonLike:before {
+  content: '\e814';
+}
+
+.fonticonShare:before {
+  content: '\e815';
+}
+
+.fonticonRefresh:before {
+  content: '\e816';
+}
+
+.fonticonDelete:before {
+  content: '\e817';
+}
+
+.fonticonFolder:before {
+  content: '\e818';
+}
+
+.fonticonCopyCB:before {
+  content: '\e819';
+}
+
+.fonticonCopy:before {
+  content: '\e81A';
+}
+
+.fonticonGears:before {
+  content: '\e81B';
+}
+
+.fonticonApps:before {
+  content: '\e81C';
+}
+
+.fonticonAssetsOutline:before {
+  content: '\e81D';
+}
+
+.fonticonBanner:before {
+  content: '\e81E';
+}
+
+.fonticonCatalogue:before {
+  content: '\e81F';
+}
+
+.fonticonFeed:before {
+  content: '\e820';
+}
+
+.fonticonCrown:before {
+  content: '\e821';
+}
+
+.fonticonStudio:before {
+  content: '\e822';
+}
+
+.fonticonChat:before {
+  content: '\e823';
+}
+
+.fonticonDownloadOutline:before {
+  content: '\e824';
+}
+
+.fonticonFilter:before {
+  content: '\e825';
+}
+
+.fonticonSend:before {
+  content: '\e826';
+}
+
+.fonticonInfo:before {
+  content: '\e827';
+}
+
+.fonticonVersions:before {
+  content: '\e828';
+}
+
+.fonticonNotifications:before {
+  content: '\e829';
+}
+
+.fonticonLeft:before {
+  content: '\e82A';
+}
+
+.fonticonRight:before {
+  content: '\e82B';
+}
+
+.fonticonWand:before {
+  content: '\e82C';
+}

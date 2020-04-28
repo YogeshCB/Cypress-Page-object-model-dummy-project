@@ -1,0 +1,57 @@
+.filters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    background: #fff;
+    border-top: 1px solid #f4f6f8;
+    height: 4.5rem;
+}
+.selected {
+    border-bottom: 0 !important;
+    padding: 2px !important;
+    color: rgba(0, 0, 0, 0.64);
+}
+.selectbox {
+    width: 15% !important;
+}
+.divider {
+    height: 2rem;
+    width: 1px;
+    background: #f4f6f8;
+    margin: 0px 4px;
+}
+.triangleContainer {
+    display: none;
+}  
+
+.triangle {
+    border: solid #c4c4c4;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block !important;
+    height: 7px !important;
+    margin-top: -7px !important;
+    padding: 0;
+    position: absolute !important;
+    right: 10px !important;
+    top: 50% !important;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 7px !important;
+  }
+
+  .bannerFilter {
+    margin-left: auto;
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .active {
+    margin-left: auto;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 10px !important;
+    border-radius: 8px !important;
+    color: #29146b !important;
+    background: #F8F6FE !important;
+  }

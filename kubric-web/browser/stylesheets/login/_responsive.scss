@@ -1,0 +1,22 @@
+// media sizes
+$screen-md: 768px;
+$screen-lg: 1100px;
+
+// media query mixins
+@mixin respond-from($size) {
+  @if $size == md {
+    @media (min-width: $screen-md) { @content; }
+  } @else if $size == lg {
+    @media (min-width: $screen-lg) { @content; }
+  }
+}
+
+@mixin respond-only-for($size) {
+  @if $size == sm {
+    @media (max-width: ($screen-md - 1)) { @content; }
+  } @else if $size == md {
+    @media (min-width: $screen-md) and (max-width: ($screen-lg - 1)) { @content; }
+  } @else if $size == lg {
+    @media (min-width: $screen-lg) { @content; }
+  }
+}

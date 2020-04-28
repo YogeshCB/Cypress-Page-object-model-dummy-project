@@ -1,0 +1,32 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+.label {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  margin-right: 1.5rem;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.targetContainer {
+  height: 100%;
+}
+
+.selector {
+  max-height: 84%;
+}
+
+.page {
+  padding: 0 1rem;
+}
+@media #{$medium-up} {
+  .slider {
+    width: 30vw;
+    height: 50vh;
+  }
+}

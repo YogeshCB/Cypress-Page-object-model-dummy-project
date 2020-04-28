@@ -1,0 +1,99 @@
+$resizer-size: 10px;
+$corner-buffer: 5px;
+
+.container {
+  position: fixed;
+  z-index: 999;
+
+  .draggable {
+    cursor: move;
+
+    &.dragging {
+      &:hover {
+        cursor: move !important;
+      }
+    }
+  }
+
+  .resizer {
+    position: absolute;
+    background: transparent;
+
+    &.top, &.bottom {
+      cursor: ns-resize;
+      height: $resizer-size;
+      left: $corner-buffer;
+      right: $corner-buffer;
+
+      &.resizing {
+        &:hover {
+          cursor: ns-resize;
+        }
+      }
+    }
+
+    &.left, &.right {
+      cursor: ew-resize;
+      width: $resizer-size;
+      top: $corner-buffer;
+      bottom: $corner-buffer;
+
+      &.resizing {
+        &:hover {
+          cursor: ew-resize;
+        }
+      }
+    }
+
+    &.top {
+      top: -$resizer-size;
+    }
+
+    &.bottom {
+      bottom: -$resizer-size;
+    }
+
+    &.left {
+      left: -$resizer-size;
+    }
+
+    &.right {
+      right: -$resizer-size;
+    }
+
+    &.corner {
+      height: $resizer-size + $corner-buffer;
+      width: $resizer-size + $corner-buffer;
+
+      &.bottomright, &.bottomleft {
+        bottom: -$resizer-size;
+      }
+
+      &.bottomright, &.topleft {
+        cursor: nwse-resize;
+      }
+
+      &.topright, &.topleft {
+        top: -$resizer-size;
+      }
+
+      &.bottomleft, &.topright {
+        cursor: nesw-resize;
+      }
+
+      &.topleft, &.bottomleft {
+        left: -$resizer-size;
+      }
+
+      &.topright, &.bottomright {
+        right: -$resizer-size;
+      }
+
+      &.resizing {
+        &:hover {
+          cursor: nwse-resize;
+        }
+      }
+    }
+  }
+}

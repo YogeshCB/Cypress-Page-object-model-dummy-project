@@ -1,0 +1,10 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.colorSelector {
+  position: relative;
+}
+
+.selectedColor {
+  @include color-blip();
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.halfcard {
+  width: 40rem;
+  right: 5rem;
+}
+
+.content {
+  padding: 0 2rem;
+}
+
+.job {
+  padding: 2rem 0;
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.progress {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.count {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}

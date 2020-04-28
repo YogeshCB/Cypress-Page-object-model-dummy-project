@@ -1,0 +1,39 @@
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "./defines";
+
+.container {
+  background: white;
+  @include centralize();
+  justify-content: space-between;
+  padding: $header-padding;
+  height: $header-height;
+  box-sizing: content-box;
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .actions {
+    @include centralize();
+  }
+
+  .filtersButton {
+    text-align: center;
+  }
+
+  .active {
+    border-radius: 8px;
+    background: #F8F6FE;
+  }
+
+  .gridButton {
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .reportsButton {
+    width: 12rem;
+    margin-right: 2rem;
+  }
+}

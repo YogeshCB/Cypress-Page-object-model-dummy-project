@@ -1,0 +1,17 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import './defines';
+
+.content {
+  height: 100%;
+  background-color: $gray_f2;
+  overflow-x: hidden;
+  position: relative;
+  
+  &.hasNavPanel {
+    margin-left: $panel-width;
+  }
+
+  &.hasheader {
+    padding-top: $desktop-header-height;
+  }
+}

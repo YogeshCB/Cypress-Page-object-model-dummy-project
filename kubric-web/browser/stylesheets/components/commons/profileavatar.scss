@@ -1,0 +1,22 @@
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+
+.avatar {
+  cursor: default;
+  border-radius: 50%;    
+  height: 3.2rem !important;
+  width: 3.2rem !important;
+}
+
+@media #{$small-only} {
+  .avatar {
+    height: $mobile-avatar-size;
+    width: $mobile-avatar-size;
+  }
+}
+
+@media #{$medium-up} {
+  .avatar {
+    height: $desktop-avatar-size;
+    width: $desktop-avatar-size;
+  }
+}

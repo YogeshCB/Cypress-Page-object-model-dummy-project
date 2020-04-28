@@ -1,0 +1,93 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+
+.container {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  font-family: SF Optimized, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-size: 1.2rem;
+  box-sizing: content-box;
+}
+
+.header {
+  font-weight: normal;
+  @include centralize-vertical();
+  .image {
+    height: 4rem;
+    width: 4rem;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+  }
+  .page {
+    color: $fb_blue;
+    font-size: 1.4rem;
+    padding-bottom: .3rem;
+    font-weight: 700;
+  }
+  .sponsored {
+    color: $fb_gray;
+    font-size: 1.2rem;
+  }
+  .headerDetails {
+    padding-left: 1rem;
+  }
+}
+
+.text {
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+  white-space: pre;
+}
+
+.description {
+  white-space: pre;
+}
+
+.videoContainer {
+  margin-top: 1rem;
+  &.hasDetails {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 1px 4px rgba(0, 0, 0, .1);
+  }
+}
+
+.footer {
+  padding: 1rem 1.2rem;
+  .headline {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .buttonContainer {
+    margin-top: .5rem;
+    text-align: right;
+  }
+  .learnMore {
+    border: 1px solid $border-color;
+    color: $fb-gray;
+    background: $bg-color;
+    border-radius: 2px;
+    padding: 0 .8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
+}
+
+.icons {
+  @include centralize();
+}
+
+.iconContainer {
+  @include centralize();
+  width: 33%;
+  height: 3.2rem;
+  margin: .5rem 0;
+  .icon {
+    font-size: 1.8rem;
+    padding-right: .6rem;
+  }
+  .iconName {
+    font-weight: 700;
+    color: $fb-gray;
+  }
+}

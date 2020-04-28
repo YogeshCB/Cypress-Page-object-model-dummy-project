@@ -1,0 +1,79 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/mixins";
+@import "../../defines";
+
+.container {
+  position: absolute;
+  top: 15rem;
+  bottom: 6rem;
+  padding: 0 2rem;
+  left: 0;
+  right: 0;
+  overflow: auto;
+
+  &.twoline {
+    top: 19rem;
+  }
+}
+
+.paramBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .7);
+  }
+
+  .suggest {
+    font-size: 2rem;
+    color: $primary-color;
+    display: inline-block;
+    padding: 0 1rem;
+
+    &:hover {
+      transform: scale(1.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.param {
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+}
+
+.button {
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 13px;
+  height: 2rem;
+}
+
+.paramContainer {
+  display: block;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  width: 90%;
+}
+
+.subParams {
+  padding-left: 2rem;
+}
+
+.header {
+  @include centralize-vertical();
+}
+
+.fields {
+  padding-left: 4rem;
+}

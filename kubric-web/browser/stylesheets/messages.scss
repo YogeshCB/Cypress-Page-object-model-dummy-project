@@ -1,0 +1,145 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+
+.messages {
+  width: 75%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.icon {
+  margin: 0 1rem;
+  height: 32px;
+  width: 32px;
+}
+
+.emptyPage {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem;
+  margin-top: 8rem;
+}
+.emptyPage h3 {    
+  margin-top: 5rem;
+  font-weight: 700;
+}
+
+
+.modalContent {
+  width: 700px;
+}
+.header {
+  font-size: 1.6rem;
+  color: #4a4a4a;  
+  font-weight: 500;
+  background: #fff;
+  height: 8rem;
+  line-height: 8rem;
+  border-bottom: 1px solid #dee7f0;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message {
+  display: block;
+  color: #5e6062;
+  padding: 2rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  border-radius: 8px;
+  border: solid 1px #ededed;
+  background-color: #ffffff;
+}
+
+.dark {
+  font-weight: 700;
+  color: #323539;
+}
+.permission {
+  display: flex;
+  align-items: center;
+}
+
+.switch { 
+  width: 52px !important;
+  height: 27px !important;
+  margin: auto;
+}
+
+.sliderOn {
+  background-color: #0c9270 !important;
+}
+
+
+.sliderOff {
+  background-color: #a4b1b7 !important;
+}
+.sliderOff::before {
+  box-shadow: 0 2px 4px 0 rgba(52, 52, 52, 0.64) !important;
+  background-color: #ffffff !important;
+  border: 1px solid #a4b1b7 !important;
+  height: 16px !important;
+  width: 16px !important;
+  top: 0px !important;
+}
+.sliderOn::before{   
+  box-shadow: 0 2px 4px 0 rgba(52, 52, 52, 0.64) !important;
+  background-color: #ffffff !important;
+  border: 1px solid #0c9270 !important;
+  height: 16px !important;
+  width: 16px !important;
+  top: 0px !important;
+}
+
+.permissions {
+  background: #fff;
+  padding: 1.6rem;
+  padding-left: 2.4rem;
+  min-height: 400px;
+}
+
+.permission {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; 
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #323539;
+}
+
+.value {
+  width: 25%;
+  text-align: center;
+}
+.preference {
+  width: 50%;
+}
+
+.preference h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.preferenceHeader {  
+  font-size: 14px;
+  color: #323539;
+  margin-bottom: 2.4rem;
+  display: flex;
+}
+.preferenceHeader h3 {
+  margin: 0;
+  font-weight: 400;
+}

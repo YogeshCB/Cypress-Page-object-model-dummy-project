@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'appicons';
+  src: url('/fonts/appicons.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family: 'Proxima Nova', sans-serif;
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-700.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817601/fonts/Proxima-Nova-400.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-300.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(https://res.cloudinary.com/dsvdhggfk/raw/upload/v1550817602/fonts/Proxima-Nova-500.ttf);
+  font-weight: 500;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  font-family: $font-family !important;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

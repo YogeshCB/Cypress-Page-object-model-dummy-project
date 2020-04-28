@@ -1,0 +1,22 @@
+.slider {
+  overflow: hidden;
+}
+
+.scroller {
+  position: relative;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1s;
+  transition-property: left, top;
+  > * {
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+  }
+  &.horizontal {
+    white-space: nowrap;
+    > * {
+      display: inline-block;
+      white-space: normal;
+    }
+  }
+}

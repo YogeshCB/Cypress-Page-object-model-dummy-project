@@ -1,0 +1,70 @@
+.container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  right: 0;
+}
+
+.create {
+  min-width: 200px;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(181, 181, 181, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  width: 80vh;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 20vh;
+  padding: 7rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.selectbox {
+  width: 240px !important;
+  margin: auto;
+}
+
+.selected {
+  text-align: left;
+}
+
+.menu {
+  width: 230px !important;
+  margin-top: 5px;
+}
+
+.logo svg {
+  width: 180px;
+}
+
+.spinner {
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  font-weight: 400;
+  color: #333;
+  font-size: 2rem;
+}
+
+.button {
+  width: 10rem;
+  margin: 0 auto;
+}

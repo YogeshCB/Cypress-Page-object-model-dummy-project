@@ -1,0 +1,83 @@
+@import '~@bit/kubric.components.styles.commons/styles/colors';
+
+$color: $gray_ea;
+$cardHeight: 20rem;
+$cardWidth: 30rem;
+$cardPadding: 1.5rem;
+$cardSkeleton: linear-gradient($color $cardHeight, transparent 0);
+
+$titleWidth: 25rem;
+$titleHeight: 3rem;
+$titleSkeleton: linear-gradient(white $titleHeight, transparent 0);
+$titlePosition: $cardPadding $cardPadding;
+
+$subtitleWidth: 15rem;
+$subtitleHeight: 1.5rem;
+$subtitleSkeleton: linear-gradient(white $subtitleHeight, transparent 0);
+$subtitlePosition: $cardPadding 5rem;
+
+$blurWidth: 20rem;
+$blurSize: $blurWidth $cardHeight;
+
+$descHeight: 1.6rem;
+$descSkeleton: linear-gradient(white $descHeight, transparent 0);
+$desc1Width: 18rem;
+$desc1Position: $cardPadding 9.2rem;
+$desc2Width: 27rem;
+$desc2Position: $cardPadding 12rem;
+$desc3Width: 27rem;
+$desc3Position: $cardPadding 14.5rem;
+
+.card {
+  width: $cardWidth;
+  height: $cardHeight;
+
+  &:empty::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+
+    background-image: linear-gradient(90deg, rgba($color, 0) 0, rgba($color, .8) 50%, rgba($color, 0) 100%), //animation blur
+    $titleSkeleton, //title
+    $subtitleSkeleton, //subtitle
+    $descSkeleton, //desc1
+    $descSkeleton, //desc2
+    $descSkeleton, //desc2
+    $cardSkeleton //card
+  ;
+
+    background-size: $blurSize,
+    $titleWidth $titleHeight,
+    $subtitleWidth $subtitleHeight,
+    $desc1Width $descHeight,
+    $desc2Width $descHeight,
+    $desc3Width $descHeight,
+    100% 100%;
+
+    background-position: -150% 0, //animation
+    $titlePosition, //title
+    $subtitlePosition, //subtitle
+    $desc1Position, //desc1
+    $desc2Position, //desc2
+    $desc3Position, //desc2
+    0 0 //card
+  ;
+
+    background-repeat: no-repeat;
+    animation: loading 1.5s infinite;
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position: 350% 0,
+    $titlePosition,
+    $subtitlePosition,
+    $desc1Position,
+    $desc2Position,
+    $desc3Position,
+    0 0;
+  }
+}

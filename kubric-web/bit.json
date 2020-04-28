@@ -1,0 +1,8 @@
+{
+    "env": {
+        "tester": "kubric.envs/testers/jest@1.0.5"
+    },
+    "dependencies": {},
+    "componentsDefaultDirectory": "browser/js/bitcomponents/{namespace}/{name}",
+    "packageManager": "yarn"
+}

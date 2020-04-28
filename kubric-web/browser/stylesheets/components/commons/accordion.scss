@@ -1,0 +1,77 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+@mixin hovered() {
+  .heading {
+    border-bottom: 0 !important;
+  }
+  .triangle {
+    border-top-color: #29146b;
+  }
+}
+
+.accordion {
+  background: white;
+  .section {
+    z-index: 0;
+    &.expand {
+      z-index: 1;
+      > .headingContainer {
+        @include hovered();
+      }
+    }
+  }
+  .headingContainer {
+    position: relative;
+  }
+  > .headingContainer {
+    &:hover {
+      @include hovered();
+    }
+  }
+  .heading {
+    padding: 1rem;
+    border-bottom: 1px solid $border-color;
+    color: $gray_89;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: white;
+  }
+  .triangle {
+    position: absolute;
+    right: 1rem;
+    border-color: $border-color;
+    border-width: 7px;
+    border-style: solid;
+    top: 1.5rem;
+    border-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: max-height;
+    position: relative;
+    &.overflow {
+      overflow: visible;
+    }
+    &.expand {
+      transition-duration: 1s;
+      max-height: 1000px;
+    }
+    &.contract {
+      transition-duration: .5s;
+      max-height: 0;
+    }
+  }
+  .spinner {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .container {
+    background: white;
+  }
+}

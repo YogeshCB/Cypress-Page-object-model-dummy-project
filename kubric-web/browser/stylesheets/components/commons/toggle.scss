@@ -1,0 +1,77 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+@import "~@bit/kubric.components.styles.commons/styles/defines";
+@import "../../defines";
+
+.container {
+	display: flex;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 26px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.label {
+	margin-top: 0.6rem;
+	color: rgba(0, 0, 0, 0.26);
+	font-weight: 400;
+	font-size: 1.2rem;
+	padding-left: 8px;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	margin: 4px 0;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	top: -4px;
+	left: 0;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	box-shadow: 1px 1px 11px 0px rgba(67, 74, 84, 0.16);
+}
+
+input:checked + .slider {
+	background-color: $primary-color;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px $primary-color;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(34px);
+	-ms-transform: translateX(34px);
+	transform: translateX(34px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}

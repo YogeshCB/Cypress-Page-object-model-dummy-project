@@ -1,0 +1,30 @@
+@import "~@bit/kubric.components.styles.commons/styles/colors";
+
+.filters {
+  display: flex;
+  > .section {
+    border-bottom: 0 !important;
+    border-right: 1px solid $border-color;
+    width: 33%;
+    padding: 1rem;
+  }
+  .section {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-color;
+    padding-left: 0;
+    margin: 1rem 2rem;
+    &:last-child {
+      border: 0;
+    }
+  }
+  .sectionName {
+    list-style: none;
+  }
+  .checkbox {
+    margin: 1rem 0;
+  }
+  .imageContainer {
+    width: 5rem;
+    height: 5rem;
+  }
+}
