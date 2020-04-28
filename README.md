@@ -1,6 +1,6 @@
 # Cypress-Page-object-model-dummy-project
-A testing framework - To test the UI component of Kubric
-Artifacts
+A testing framework - To test the UI component 
+
 You can save generated videos and screenshots as CircleCI artifacts
 
 steps:
@@ -27,7 +27,6 @@ The generated file will be placed in folder results and the folder will be uploa
 it('has h2', () => {
   cy.contains('h2', 'testing')
 })
-See the failed CI test run at https://circleci.com/gh/cypress-io/cypress-example-docker-circle/10.
 
 The CircleCI test summary shows failed test and user-friendly message.
 
